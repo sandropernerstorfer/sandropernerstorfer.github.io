@@ -1,1 +1,23 @@
 @import 'colors','fonts';
+
+// *************************************** Global Settings ******* //
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    *::selection{
+        background: #000;
+        color: #fff;
+    }
+    *::-moz-selection{
+        background: #000;
+        color: #fff;
+    }
+
+body{
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    background-color: #191A1F;
+}

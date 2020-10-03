@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Courgette";
+  src: url(../fonts/Courgette/Courgette-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+*::selection {
+  background: #000;
+  color: #fff; }
+
+*::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  background-color: #191A1F; }
 
 /*# sourceMappingURL=style.css.map */
