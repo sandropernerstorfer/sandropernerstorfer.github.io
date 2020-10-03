@@ -21,3 +21,99 @@ body{
     overscroll-behavior-x: none;
     background-color: #191A1F;
 }
+
+// ---------------------------------------------------------------- //
+// ***************************************** Navbar *************** //
+
+#nav-logo{
+    position: absolute;
+    left: 5%;
+    top: 11px;
+    font-family: 'Courgette', cursive;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.color-tag{
+    color: #EF740E;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    background-color: #191A1F;
+    color: #fff;
+}
+
+.navbar-brand{
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.nav-link{
+    cursor: pointer;
+    border-bottom: 5px solid #191A1F;
+    transition: all .4s;
+    letter-spacing: 2px;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #EF740E;
+}
+
+.dropdown-menu{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: #fff;
+    color: blue;
+}
+
+#navbarDropdownMenuLink img{
+    height: 1rem;
+    width: 1rem;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52,52,52, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+border-color: #fff
+}
+
+@media all and (min-width: 992px) {
+.navbar .nav-item .dropdown-menu{ 
+    display: none; 
+}
+.navbar .nav-item:hover .dropdown-menu{
+    display: block;
+}
+.navbar .nav-item .dropdown-menu{
+    margin-top:0;
+}
+}
+
+// ---------------------------------------------------------------- //
+
+// ******************************************** Content //
+
+#first-box{
+    border-radius: 30px;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#test-box{
+    height: 300px;
+    width: 200px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: inset 20px 20px 60px #d9d9d9, 
+                inset -20px -20px 60px #ffffff;
+}
