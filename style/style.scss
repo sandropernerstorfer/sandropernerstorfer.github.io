@@ -26,6 +26,7 @@ body{
 // ***************************************** Navbar *************** //
 
 #nav-logo{
+    color: #eae9e0;
     position: absolute;
     left: 5%;
     top: 14px;
@@ -40,7 +41,7 @@ body{
 }
 
 .color-tag{
-    color: #EF740E;
+    color: #9AE5E6;
 }
 
 #navbar{
@@ -65,7 +66,7 @@ body{
     font-size: 115%;
 }
 .nav-link:hover{
-    border-bottom: 2px solid #9AE5E6;
+    border-bottom: 1px solid #9AE5E6;
     color: #fff;
     font-weight: 500;
 }
@@ -111,19 +112,84 @@ border-color: #fff
 
 // ******************************************** Content //
 
-#first-box{
-    border-radius: 30px;
-    width: 40%;
-    height: 100%;
-    padding: 20px;
-    background-color: #fff;
+main{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eae9e0;
 }
 
-#test-box{
-    height: 300px;
-    width: 200px;
-    border-radius: 50px;
-    background: #ffffff;
-    box-shadow: inset 20px 20px 60px #d9d9d9, 
-                inset -20px -20px 60px #ffffff;
+#intro-box{
+    padding: 0px 20px;
+}
+
+#intro-name{
+    font-size: 3rem;
+}
+
+#intro-desc{
+    font-size: 2rem;
+}
+
+@media (max-width: 992px){
+    #intro-name{
+        font-size: 2.5rem;
+    }
+    
+    #intro-desc{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 577px){
+    #intro-name{
+        font-size: 2rem;
+    }
+    
+    #intro-desc{
+        font-size: 1rem;
+    }
+}
+
+.intro-button{
+    border-radius: 40px;
+    color: #eae9e0;
+    padding: 10px 15px;
+}
+
+.fa-play-circle{
+    color: #9AE5E6;
+}
+
+
+.custom-shape-divider-bottom-1601852352 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1601852352 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 255px;
+}
+
+.custom-shape-divider-bottom-1601852352 .shape-fill {
+    fill: #EAE9E0;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1601852352 svg {
+        width: calc(100% + 1.3px);
+        height: 96px;
+    }
 }
