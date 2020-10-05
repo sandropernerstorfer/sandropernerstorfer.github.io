@@ -65,18 +65,20 @@ function showContent(){
     mainBox.style.display = 'block';
 }
 
-
+function languageHandling(x){
 let localStore = localStorage.getItem('sandroLanguage');
 
-if(localStore === null || localStore === 'english'){
+if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
+    $('#btn-eng').prop('disabled', true);
+    $('#btn-de').prop('disabled', false);
     insertContent(english);
 }
-else if(localStore === 'german'){
+else if(localStore === 'german' || x === german){
+    $('#btn-de').prop('disabled', true);
+    $('#btn-eng').prop('disabled', false);
     insertContent(german);
 }
-
-
 
 function insertContent(i){
     let targetElements = document.getElementsByClassName('language-switch');
@@ -85,7 +87,9 @@ function insertContent(i){
         targetElements[a].textContent = Object.values(i)[a];
     }
 }
+}
 
+languageHandling();
 
-document.getElementById('btn-eng').addEventListener('click', function(){insertContent(english);localStorage.setItem("sandroLanguage","english");$('#exampleModalCenter').modal('hide');}, false);
-document.getElementById('btn-de').addEventListener('click', function(){insertContent(german);localStorage.setItem("sandroLanguage","german");$('#exampleModalCenter').modal('hide');}, false);
+document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);$('#exampleModalCenter').modal('hide');}, false);
+document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);$('#exampleModalCenter').modal('hide');}, false);
