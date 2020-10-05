@@ -64,3 +64,28 @@ const mainBox = document.getElementById('main-box');
 function showContent(){
     mainBox.style.display = 'block';
 }
+
+
+let localStore = localStorage.getItem('sandroLanguage');
+
+if(localStore === null || localStore === 'english'){
+    localStorage.setItem('sandroLanguage', 'english');
+    insertContent(english);
+}
+else if(localStore === 'german'){
+    insertContent(german);
+}
+
+
+
+function insertContent(i){
+    let targetElements = document.getElementsByClassName('language-switch');
+
+    for(a = 0; a < targetElements.length; a++){
+        targetElements[a].textContent = Object.values(i)[a];
+    }
+}
+
+
+document.getElementById('btn-eng').addEventListener('click', function(){insertContent(english);localStorage.setItem("sandroLanguage","english");$('#exampleModalCenter').modal('hide');}, false);
+document.getElementById('btn-de').addEventListener('click', function(){insertContent(german);localStorage.setItem("sandroLanguage","german");$('#exampleModalCenter').modal('hide');}, false);
