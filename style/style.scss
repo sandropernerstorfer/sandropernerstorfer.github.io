@@ -42,10 +42,30 @@ header{
 
 #intro-name{
     font-size: 3rem;
+    opacity: 0;
+    transition: opacity 4s;
+    cursor: default;
 }
 
 #intro-desc{
     font-size: 2rem;
+    opacity: 0;
+    transition: opacity 4s;
+    cursor: default;
+}
+
+#intro-button{
+    border-radius: 40px;
+    color: #eae9e0;
+    padding: 10px 15px;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 2s;
+    cursor: default;
+}
+
+.fa-play-circle{
+    color: #9AE5E6;
 }
 
 @media (max-width: 992px){
@@ -68,16 +88,10 @@ header{
     }
 }
 
-.intro-button{
-    border-radius: 40px;
-    color: #eae9e0;
-    padding: 10px 15px;
+#landing-shape{
+    opacity: 0;
+    transition: opacity 3s;
 }
-
-.fa-play-circle{
-    color: #9AE5E6;
-}
-
 
 .custom-shape-divider-bottom-1601852352 {
     position: absolute;
