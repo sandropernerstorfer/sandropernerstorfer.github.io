@@ -21,6 +21,28 @@ body {
   overscroll-behavior-x: none;
   background-color: #EAE9E0; }
 
+#language-bubble {
+  background-color: #343A40;
+  border: 2px solid #9AE5E6;
+  color: #9AE5E6;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+  cursor: default; }
+
+#language-bubble:hover {
+  background-color: #23272b; }
+
+.fa-flag {
+  line-height: 48px; }
+
 header {
   position: relative;
   width: 100%;
@@ -42,9 +64,17 @@ header {
 
 #intro-desc {
   font-size: 2rem;
+  cursor: default;
   opacity: 0;
-  transition: opacity 4s;
-  cursor: default; }
+  transition: opacity 4s; }
+
+#word-frontend {
+  opacity: 0;
+  transition: opacity 4s; }
+
+#word-development {
+  opacity: 0;
+  transition: opacity 4s; }
 
 #intro-button {
   border-radius: 40px;
@@ -72,7 +102,8 @@ header {
     font-size: 1rem; } }
 #landing-shape {
   opacity: 0;
-  transition: opacity 3s; }
+  transition: opacity 3s;
+  z-index: 1; }
 
 .custom-shape-divider-bottom-1601852352 {
   position: absolute;
