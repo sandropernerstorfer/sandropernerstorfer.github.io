@@ -21,3 +21,21 @@ if(isMobile)
 
     landingShape.style.display = 'none';
 };
+
+// ****************************************** //
+// *** INTRO FADE IN ANIMATION *** //
+
+let introName = document.getElementById('intro-name');
+let introDesc = document.getElementById('intro-desc');
+let introBtn = document.getElementById('intro-button');
+let landingShape = document.getElementById('landing-shape');
+
+function introFade(){
+    setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1"',1);
+    setTimeout('introDesc.style.opacity = "1";',1500);
+    setTimeout('introBtn.style.opacity = "1"; introBtn.style.cursor = "pointer"',3500);
+}
+
+introFade();
+
+// ******************************************************** //
