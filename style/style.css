@@ -99,38 +99,6 @@ html {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none; }
 
-#front-icon {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  right: 50.5%;
-  font-size: 280%;
-  text-align: center;
-  line-height: 85px;
-  color: #EAE9E0;
-  background-color: #343A40;
-  opacity: 0;
-  transition: opacity 5s; }
-
-#dev-icon {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 50.5%;
-  font-size: 280%;
-  text-align: center;
-  line-height: 85px;
-  color: #EAE9E0;
-  background-color: #343A40;
-  opacity: 0;
-  transition: opacity 5s; }
-
 #language-bubble {
   background-color: #343A40;
   border: 2px solid #9AE5E6;
