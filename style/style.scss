@@ -18,6 +18,7 @@
 
 body{
     background-color: #EAE9E0;
+    padding-right: 0 !important;
 }
 
 html{
@@ -87,6 +88,41 @@ html{
 .fa-flag{
     line-height: 48px;
 }
+
+.modal{
+    font-family: "Ubuntu";
+}
+
+.modal-content{
+    border-radius: 20px;
+    background-color: #eae9e0;
+    color: #343A40;
+}
+
+#languages{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.lang-box{
+    width: 50%;
+    position: relative;
+}
+
+.lang-box>img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.language-btn{
+    color: #343A40;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
 
 header{
     position: relative;
