@@ -3,6 +3,81 @@
   src: url(../fonts/Courgette/Courgette-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-Black.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 900; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-ExtraBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita/SansitaSwashed-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 300; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-MediumItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 500; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 700; }
 * {
   margin: 0;
   padding: 0;
@@ -17,35 +92,40 @@
   color: #fff; }
 
 body {
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
   background-color: #EAE9E0; }
 
+html {
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none; }
+
 #front-icon {
-  width: 120px;
-  height: 120px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   position: absolute;
-  top: 25%;
-  left: 20%;
-  font-size: 400%;
+  top: 20%;
+  right: 50.5%;
+  font-size: 280%;
   text-align: center;
-  line-height: 110px;
+  line-height: 85px;
   color: #EAE9E0;
   background-color: #343A40;
   opacity: 0;
   transition: opacity 5s; }
 
 #dev-icon {
-  width: 120px;
-  height: 120px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   position: absolute;
-  top: 25%;
-  right: 20%;
-  font-size: 400%;
+  top: 20%;
+  left: 50.5%;
+  font-size: 280%;
   text-align: center;
-  line-height: 115px;
+  line-height: 85px;
   color: #EAE9E0;
   background-color: #343A40;
   opacity: 0;
@@ -87,12 +167,16 @@ header {
   padding: 0px 20px; }
 
 #intro-name {
+  font-family: "Sansita";
+  font-weight: 500;
   font-size: 3rem;
   opacity: 0;
   transition: opacity 4s;
   cursor: default; }
 
 #intro-desc {
+  font-family: "Ubuntu";
+  font-weight: 300;
   font-size: 2rem;
   cursor: default;
   opacity: 0;
@@ -107,13 +191,13 @@ header {
   transition: opacity 4s; }
 
 #intro-button {
-  border-radius: 40px;
+  border-radius: 50%;
   color: #eae9e0;
-  padding: 10px 15px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0;
   transition: opacity 2s;
-  cursor: default; }
+  cursor: default;
+  text-align: center; }
 
 .fa-play-circle {
   color: #9AE5E6; }
@@ -152,6 +236,9 @@ header {
 
 .custom-shape-divider-bottom-1601852352 .shape-fill {
   fill: #191A1F; }
+
+#main-box {
+  display: none; }
 
 #nav-logo {
   color: #eae9e0;

@@ -17,24 +17,29 @@
     }
 
 body{
+    background-color: #EAE9E0;
+}
+
+html{
+    overflow-y: scroll;
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
-    background-color: #EAE9E0;
 }
 
 // ---------------------------------------------------------------- //
 // ******************************************** Content //
 
 #front-icon{
-    width: 120px;
-    height: 120px;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     position: absolute;
-    top: 25%;
-    left: 20%;
-    font-size: 400%;
+    top: 20%;
+    right: 50.5%;
+    font-size: 280%;
     text-align: center;
-    line-height: 110px;
+    line-height: 85px;
     color: #EAE9E0;
     background-color: #343A40;
     opacity: 0;
@@ -42,15 +47,16 @@ body{
 }
 
 #dev-icon{
-    width: 120px;
-    height: 120px;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     position: absolute;
-    top: 25%;
-    right: 20%;
-    font-size: 400%;
+    top: 20%;
+    left: 50.5%;
+    font-size: 280%;
     text-align: center;
-    line-height: 115px;
+    line-height: 85px;
     color: #EAE9E0;
     background-color: #343A40;
     opacity: 0;
@@ -98,6 +104,8 @@ header{
 }
 
 #intro-name{
+    font-family: "Sansita";
+    font-weight: 500;
     font-size: 3rem;
     opacity: 0;
     transition: opacity 4s;
@@ -105,6 +113,8 @@ header{
 }
 
 #intro-desc{
+    font-family: "Ubuntu";
+    font-weight: 300;
     font-size: 2rem;
     cursor: default;
     opacity: 0;
@@ -122,13 +132,13 @@ header{
 }
 
 #intro-button{
-    border-radius: 40px;
+    border-radius: 50%;
     color: #eae9e0;
-    padding: 10px 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 0;
     transition: opacity 2s;
     cursor: default;
+    text-align: center;
 }
 
 .fa-play-circle{
@@ -180,6 +190,10 @@ header{
 
 .custom-shape-divider-bottom-1601852352 .shape-fill {
     fill: #191A1F;
+}
+
+#main-box{
+    display: none;
 }
 
 // ***************************************** Navbar *************** //
