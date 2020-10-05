@@ -21,6 +21,36 @@ body {
   overscroll-behavior-x: none;
   background-color: #EAE9E0; }
 
+#front-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  font-size: 400%;
+  text-align: center;
+  line-height: 110px;
+  color: #EAE9E0;
+  background-color: #343A40;
+  opacity: 0;
+  transition: opacity 4s; }
+
+#dev-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  font-size: 400%;
+  text-align: center;
+  line-height: 115px;
+  color: #EAE9E0;
+  background-color: #343A40;
+  opacity: 0;
+  transition: opacity 4s; }
+
 #language-bubble {
   background-color: #343A40;
   border: 2px solid #9AE5E6;
