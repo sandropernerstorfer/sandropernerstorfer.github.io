@@ -26,6 +26,7 @@ body{
 // ******************************************** Content //
 
 header{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -97,20 +98,6 @@ header{
 
 .custom-shape-divider-bottom-1601852352 .shape-fill {
     fill: #191A1F;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-bottom-1601852352 svg {
-        width: calc(100% + 1.3px);
-        height: 96px;
-    }
-}
-
-#about-box{
-    background-color: #191A1F;
-    width: 100%;
-    height: 1500px;
 }
 
 // ***************************************** Navbar *************** //
@@ -199,3 +186,9 @@ border-color: #fff
 }
 
 // ---------------------------------------------------------------- //
+
+#about-box{
+    background-color: #191A1F;
+    width: 100%;
+    height: 1500px;
+}
