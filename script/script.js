@@ -27,13 +27,17 @@ if(isMobile)
 
 let introName = document.getElementById('intro-name');
 let introDesc = document.getElementById('intro-desc');
+let wordFront = document.getElementById('word-frontend');
+let wordDev = document.getElementById('word-development');
 let introBtn = document.getElementById('intro-button');
+let languageBub = document.getElementById('language-bubble');
 let landingShape = document.getElementById('landing-shape');
 
 function introFade(){
     setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1"',1);
-    setTimeout('introDesc.style.opacity = "1";',1500);
-    setTimeout('introBtn.style.opacity = "1"; introBtn.style.cursor = "pointer"',3500);
+    setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"',1500);
+    setTimeout('wordDev.style.opacity = "1"',3500);
+    setTimeout('introBtn.style.opacity = "1"; introBtn.style.cursor = "pointer"; languageBub.style.opacity = "1"; languageBub.style.cursor = "pointer"',5500);
 }
 
 introFade();
