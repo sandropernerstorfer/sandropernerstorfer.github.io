@@ -39,3 +39,16 @@ function introFade(){
 introFade();
 
 // ******************************************************** //
+// *** SMOOTH SCROLL *** //
+
+(function () {
+    let target = document.querySelectorAll('span[href^="#"]');
+    for (a=0; a<target.length; a++) {
+       target[a].onclick = function (e) {
+          let hash = this.getAttribute("href");
+          let elem = document.getElementById(hash.replace("#",""));
+          elem.scrollIntoView({ left: 0, block: 'start', behavior: 'smooth' });
+          e.preventDefault();
+        }
+    }
+    })();
