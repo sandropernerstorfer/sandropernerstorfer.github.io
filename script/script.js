@@ -15,14 +15,17 @@ let isMobile = false;
 // ******************************************************************************************************* //
 
 let landingShape = document.getElementById('landing-shape');
-let headerTag = document.getElementsByTagName('HEADER');
+let currentVW = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+let currentVH = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 // *** ACTIONS WHEN ON MOBILE DEVICE *** //
 
 if(isMobile)
 {
+    let headerTag = document.getElementById('header-tag');
+    headerTag.style.height = currentVH+'px';
+    
     landingShape.style.display = 'none';
-    headerTag[0].style.height = '90vh';
 };
 
 // ****************************************** //
