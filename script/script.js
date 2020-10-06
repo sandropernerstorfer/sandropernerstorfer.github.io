@@ -38,7 +38,7 @@ let wordDev = document.getElementById('word-development');
 let introBtn = document.getElementById('intro-button');
 let languageBub = document.getElementById('language-bubble');
 
-function introFade(){
+function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
     setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1";',1);
     setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1";',1500);
     setTimeout('wordDev.style.opacity = "1";',3500);
