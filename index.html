@@ -15,8 +15,6 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-  <!-- <div id="dev-icon"><i class="fas fa-laptop-code"></i></div>
-  <div id="front-icon"><i class="fas fa-drafting-compass"></i></div> -->
   <div id="language-bubble" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-flag"></i></div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -42,7 +40,7 @@
       <div id="intro-box">
         <p id="intro-name">Sandro Pernerstorfer</p>
         <p id="intro-desc"><span class="color-tag">|</span><span id="word-frontend"> Frontend </span><span class="color-tag">| </span><span id="word-development" class="language-switch"></span><span class="color-tag"> |</span></p>
-        <span href="#about-box"><button id="intro-button" class="btn btn-dark mt-3"><i class="far fa-play-circle"></i></button></span>
+        <span href="#navbar"><button id="intro-button" class="btn btn-dark mt-3"><i class="far fa-play-circle"></i></button></span>
       </div>
       <div id="landing-shape" class="custom-shape-divider-bottom-1601852352">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -54,7 +52,7 @@
 <!-- MAIN CONTENT -->
     <main id="main-box">
 <!-- NAVBAR -->
-      <nav id="navbar" class="navbar navbar-expand-lg justify-content-center pt-5">
+      <nav id="navbar" class="navbar navbar-expand-lg justify-content-center pt-lg-5 pt-sm-2">
         <span id="nav-logo"><span class="color-tag"><</span> S.P <span class="color-tag">></span></span>
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +74,33 @@
 <!-- NAVBAR END -->
 <!-- ABOUT SECTION -->
       <section id="about-box">
-        
+        <div id="about-spacing"></div>
+        <div id="about-container" class="container">
+          <div class="row">
+            <div id="about-box-1" class="col-sm m-3 pt-2">
+              <h3>Über mich</h3>
+              <hr>
+              <p><span id="about-greeting">Hey ich bin Sandro !</span><br><br>Ein motivierter und lerneifriger Web-Entwickler aus Wien.</p>
+              <p>Ich habe dieses Portfolio erstellt um einen kurzen Überblick von mir und meiner Arbeit zu schaffen.</p>
+              <div class="mt-5">
+                <hr>
+              </div>
+              <div class="row text-center pt-5 justify-content-center">
+                <div class="col" style="width: 90px;">
+                  <div id="front-icon"><i class="fas fa-drafting-compass"></i></div>
+                </div>
+                <div class="col" style="width: 90px;">
+                  <div id="dev-icon"><i class="fas fa-laptop-code"></i></div>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div id="about-box-2" class="col-sm text-center m-3">
+              <img src="img/heroimg.png" alt="">
+            </div>
+          </div>
+        </div> 
       </section>
 <!-- ABOUT SECTION END -->
     </main>
