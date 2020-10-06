@@ -15,12 +15,14 @@ let isMobile = false;
 // ******************************************************************************************************* //
 
 let landingShape = document.getElementById('landing-shape');
+let headerTag = document.getElementsByTagName('HEADER');
 
 // *** ACTIONS WHEN ON MOBILE DEVICE *** //
 
 if(isMobile)
 {
     landingShape.style.display = 'none';
+    headerTag[0].style.height = '90vh';
 };
 
 // ****************************************** //
