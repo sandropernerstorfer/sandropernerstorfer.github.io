@@ -45,6 +45,7 @@ html{
     opacity: 0;
     transition: opacity 2s;
     cursor: default;
+    z-index: 6;
 }
 
 #language-bubble:hover{
@@ -338,13 +339,17 @@ border: 0;
     border-radius: 20px;
 }
 
-#about-box-2 img{
+#modal-content img{
     border-radius: 10px;
     height: auto;
     width: 100%;
     -webkit-box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
     -moz-box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
     box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
+}
+
+.icon-button{
+    border-radius: 25px;
 }
 
 #front-icon{
@@ -356,17 +361,20 @@ border: 0;
     text-align: center;
     line-height: 85px;
     color: #EAE9E0;
-    background-color: #343A40;
+    transition: all .4s;
 }
 
 #dev-icon{
     display: inline-block;
     width: 90px;
     height: 90px;
-    border-radius: 50%;
     font-size: 280%;
     text-align: center;
     line-height: 85px;
     color: #EAE9E0;
-    background-color: #343A40;
+    transition: all .4s;
+}
+
+#dev-icon:hover, #front-icon:hover{
+    font-size: 350%;
 }
