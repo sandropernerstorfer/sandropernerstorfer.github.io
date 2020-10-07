@@ -70,6 +70,18 @@ function showContent(){
     mainBox.style.display = 'block';
 }
 
+// ****************************************************************************** //
+// *** LANGUAGE HANDLING / INSERTION *** //
+
+languageHandling();
+
+// *** GET BUTTONS INSIDE LANGUAGE MODAL *** //
+
+document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);$('#exampleModalCenter').modal('hide');}, false);
+document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);$('#exampleModalCenter').modal('hide');}, false);
+
+// *** FUNCTION FOR LANGUAGE INSERTION *** //
+
 function languageHandling(x){
 let localStore = localStorage.getItem('sandroLanguage');
 
@@ -94,7 +106,16 @@ function insertContent(i){
 }
 }
 
-languageHandling();
+// ****************************************************************************** //
+// *** MODAL IMAGE INSERTION *** //
 
-document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);$('#exampleModalCenter').modal('hide');}, false);
-document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);$('#exampleModalCenter').modal('hide');}, false);
+const modalImg = document.getElementById('modal-content');
+
+document.getElementById('code-btn').addEventListener('click', function(){insertModalImg('coding-back.png');}, false);
+document.getElementById('creative-btn').addEventListener('click', function(){insertModalImg('guitar-playing.png');}, false);
+
+function insertModalImg(i){
+    modalImg.innerHTML = '<img src="img/sandro/'+i+'" alt="">';
+}
+
+// ****************************************************************************** //
