@@ -108,15 +108,13 @@ function insertContent(i){
 }
 
 // ****************************************************************************** //
-// *** MODAL IMAGE INSERTION *** //
+// *** 2 ICONS - EVENTS *** //
 
-const modalImg = document.getElementById('modal-content');
+document.getElementById('code-btn').addEventListener('click', function(){iconAction('code');}, false);
+document.getElementById('creative-btn').addEventListener('click', function(){iconAction('creative');}, false);
 
-document.getElementById('code-btn').addEventListener('click', function(){insertModalImg('coding-back.png');}, false);
-document.getElementById('creative-btn').addEventListener('click', function(){insertModalImg('guitar-playing.png');}, false);
-
-function insertModalImg(i){
-    modalImg.innerHTML = '<img src="img/sandro/'+i+'" alt="">';
+function iconAction(a){
+    console.log(a);
 }
 
 // ****************************************************************************** //
