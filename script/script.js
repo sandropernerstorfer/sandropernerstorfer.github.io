@@ -42,7 +42,7 @@ function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
     setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1";',1);
     setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1";',1500);
     setTimeout('wordDev.style.opacity = "1";',3500);
-    setTimeout('introBtn.style.opacity = "1"; introBtn.style.cursor = "pointer"; languageBub.style.opacity = "1"; languageBub.style.cursor = "pointer"',5500);
+    setTimeout('introBtn.style.opacity = ".9"; introBtn.style.cursor = "pointer"; languageBub.style.opacity = ".9"; languageBub.style.cursor = "pointer"',5500);
 }
 
 introFade();
