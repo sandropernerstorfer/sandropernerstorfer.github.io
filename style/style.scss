@@ -331,12 +331,12 @@ border: 0;
     color: #ABABAB;
 }
 
-#about-box-1 #about-greeting{
+.about-headline{
     color: #eae9e0;
     font-weight: 700;
 }
 
-#about-box-1 hr{
+#about-box hr{
     background-color: #9AE5E6;
     margin-bottom: 40px;
 }
@@ -350,6 +350,10 @@ border: 0;
 @media (max-width: 600px){
     #about-box-1 p{
         font-size: 150%;
+    }
+
+    .about-headline{
+        font-size: 160%;
     }
 }
 
@@ -407,4 +411,31 @@ border: 0;
 
 #dev-icon:hover, #front-icon:hover{
     font-size: 350%;
+}
+
+.showcase-box{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.showcase-box .card{
+    box-sizing: content-box;
+    border-radius: 20px;
+    width: 120px;
+    height: 170px;
+    padding: 10px;
+    margin: 10px auto;
+    color: #343A40;
+    background-color: transparent;
+    border: none;
+}
+
+.card img{
+    height: 120px;
+    width: 100%;
 }
