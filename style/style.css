@@ -207,7 +207,9 @@ header {
 
 .fa-play-circle {
   margin: 0 auto;
-  font-weight: 900; }
+  font-weight: 900;
+  display: inline-block;
+  line-height: 47px; }
 
 @media (max-width: 992px) {
   #intro-name {
