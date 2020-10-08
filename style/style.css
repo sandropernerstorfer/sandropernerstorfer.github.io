@@ -92,7 +92,7 @@
   color: #fff; }
 
 body {
-  background-color: #EAE9E0;
+  background-color: #191A1F;
   padding-right: 0 !important; }
 
 html {
@@ -162,7 +162,8 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #343A40; }
+  color: #343A40;
+  background-color: #EAE9E0; }
 
 #intro-box {
   padding: 0px 20px; }
@@ -231,11 +232,14 @@ header {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 255px; }
+  height: 250px; }
 
 .custom-shape-divider-bottom-1601852352 .shape-fill {
   fill: #191A1F; }
 
+@media (max-height: 700px) {
+  #landing-shape {
+    display: none; } }
 #main-box {
   display: none; }
 
