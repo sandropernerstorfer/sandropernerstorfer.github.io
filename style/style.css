@@ -334,13 +334,16 @@ header {
 @media (max-width: 992px) {
   #about-spacing {
     height: 30px; } }
+.section-headline {
+  font-weight: 300; }
+
 #about-box-1 {
   border-radius: 15px;
   color: #ABABAB; }
 
 .about-headline {
   color: #eae9e0;
-  font-weight: 700; }
+  font-weight: 500; }
 
 #about-box hr {
   background-color: #9AE5E6;
