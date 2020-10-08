@@ -150,10 +150,9 @@ header{
 .fa-play-circle{
     font-size: 40px;
     font-weight: 500;
-    transition: all .7s;
+    transition: all .3s;
     &:hover{
-        text-shadow: 2px 2px 2px #000;
-        color: #9AE5E6;
+        color: crimson;
     }
 }
 

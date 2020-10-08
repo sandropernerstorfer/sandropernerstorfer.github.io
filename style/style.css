@@ -203,10 +203,9 @@ header {
 .fa-play-circle {
   font-size: 40px;
   font-weight: 500;
-  transition: all .7s; }
+  transition: all .3s; }
   .fa-play-circle:hover {
-    text-shadow: 2px 2px 2px #000;
-    color: #9AE5E6; }
+    color: crimson; }
 
 @media (max-width: 650px) {
   #intro-name {
