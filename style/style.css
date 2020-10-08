@@ -208,13 +208,13 @@ header {
     text-shadow: 2px 2px 2px #000;
     color: #9AE5E6; }
 
-@media (max-width: 992px) {
+@media (max-width: 650px) {
   #intro-name {
     font-size: 2.5rem; }
 
   #intro-desc {
     font-size: 1.5rem; } }
-@media (max-width: 577px) {
+@media (max-width: 550px) {
   #intro-name {
     font-size: 2rem; }
 
@@ -353,6 +353,9 @@ header {
   font-size: 200%; }
 
 @media (max-width: 600px) {
+  #about-box-1 p {
+    font-size: 150%; } }
+@media (max-width: 510px) {
   #about-box-1 p {
     font-size: 100%; } }
 #about-box-2 {

@@ -157,7 +157,7 @@ header{
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 650px){
     #intro-name{
         font-size: 2.5rem;
     }
@@ -167,7 +167,7 @@ header{
     }
 }
 
-@media (max-width: 577px){
+@media (max-width: 550px){
     #intro-name{
         font-size: 2rem;
     }
@@ -348,6 +348,12 @@ border: 0;
 }
 
 @media (max-width: 600px){
+    #about-box-1 p{
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 510px){
     #about-box-1 p{
         font-size: 100%;
     }
