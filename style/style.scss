@@ -139,17 +139,14 @@ header{
 }
 
 #intro-button{
-    border-radius: 40px;
-    color: #eae9e0;
-    font-size: 160%;
+    border-radius: 50%;
+    font-size: 25px;
     opacity: 0;
     transition: opacity 2s;
     cursor: default;
     text-align: center;
     vertical-align: middle;
     color: #9AE5E6;
-    padding: 5px;
-    width: 55px;
 }
 
 @media (max-width: 992px){
