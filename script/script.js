@@ -20,9 +20,10 @@ let currentVH = Math.max(document.documentElement.clientHeight || 0, window.inne
 
 // *** ACTIONS WHEN ON MOBILE DEVICE *** //
 
+let headerTag = document.getElementById('header-tag');
+
 if(isMobile)
 {
-    let headerTag = document.getElementById('header-tag');
     headerTag.style.height = currentVH+'px';
     
     landingShape.style.display = 'none';
