@@ -209,7 +209,7 @@ header {
   margin: 0 auto;
   font-weight: 900;
   display: inline-block;
-  line-height: 47px; }
+  line-height: 43px; }
 
 @media (max-width: 992px) {
   #intro-name {
