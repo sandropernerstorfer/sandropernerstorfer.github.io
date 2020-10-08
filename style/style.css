@@ -193,15 +193,17 @@ header {
   transition: opacity 4s; }
 
 #intro-button {
-  border-radius: 50%;
+  border-radius: 40px;
   color: #eae9e0;
   font-size: 160%;
   opacity: 0;
   transition: opacity 2s;
   cursor: default;
   text-align: center;
+  vertical-align: middle;
   color: #9AE5E6;
-  padding: 5px 11px; }
+  padding: 5px;
+  width: 55px; }
 
 @media (max-width: 992px) {
   #intro-name {
