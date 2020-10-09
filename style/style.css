@@ -266,7 +266,7 @@ header {
 
 @media (max-width: 992px) {
   #nav-logo {
-    top: 5px; } }
+    display: none; } }
 .color-tag {
   color: #9AE5E6; }
 
