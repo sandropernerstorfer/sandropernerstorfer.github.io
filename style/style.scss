@@ -461,3 +461,28 @@ border: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: default;
 }
+
+@media (max-width: 423px){
+    .skill-headline{
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 401px){
+    .showcase-box .card{
+        width: 95px;
+        height: 140px;
+    }
+    .card img{
+        height: 95px;
+    }
+    .card p{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 320px){
+    .skill-headline{
+        font-size: 100%;
+    }
+}
