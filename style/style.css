@@ -128,6 +128,9 @@ html {
   background-color: #191A1F;
   opacity: 1; }
 
+.modal-title {
+  cursor: default; }
+
 .modal-content {
   border-radius: 20px;
   background-color: #eae9e0;
@@ -335,7 +338,8 @@ header {
   #about-spacing {
     height: 30px; } }
 .section-headline {
-  font-weight: 300; }
+  font-weight: 300;
+  cursor: default; }
 
 #about-box-1 {
   border-radius: 15px;
@@ -344,14 +348,16 @@ header {
 .about-headline {
   color: #eae9e0;
   font-weight: 500;
-  font-family: "Sansita"; }
+  font-family: "Sansita";
+  cursor: default; }
 
 #about-box hr {
   background-color: #9AE5E6; }
 
 #about-box-1 p {
   font-weight: 200;
-  font-size: 180%; }
+  font-size: 180%;
+  cursor: default; }
 
 @media (max-width: 600px) {
   #about-box-1 p {
@@ -406,7 +412,7 @@ header {
   font-size: 350%; }
 
 .showcase-box {
-  padding: 10px;
+  padding-top: 7px;
   width: 100%;
   height: auto;
   flex-direction: row;
@@ -436,6 +442,7 @@ header {
   width: 100%; }
 
 .card p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: default; }
 
 /*# sourceMappingURL=style.css.map */

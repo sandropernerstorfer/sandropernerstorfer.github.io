@@ -62,6 +62,10 @@ html{
     opacity: 1;
 }
 
+.modal-title{
+    cursor: default;
+}
+
 .modal-content{
     border-radius: 20px;
     background-color: #eae9e0;
@@ -327,6 +331,7 @@ border: 0;
 
 .section-headline{
     font-weight: 300;
+    cursor: default;
 }
 
 #about-box-1{
@@ -338,6 +343,7 @@ border: 0;
     color: #eae9e0;
     font-weight: 500;
     font-family: "Sansita";
+    cursor: default;
 }
 
 #about-box hr{
@@ -347,6 +353,7 @@ border: 0;
 #about-box-1 p{
     font-weight: 200;
     font-size: 180%;
+    cursor: default;
 }
 
 @media (max-width: 600px){
@@ -416,7 +423,7 @@ border: 0;
 }
 
 .showcase-box{
-    padding: 10px;
+    padding-top: 7px;
     width: 100%;
     height: auto;
     flex-direction: row;
@@ -452,4 +459,5 @@ border: 0;
 
 .card p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: default;
 }
