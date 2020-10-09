@@ -348,7 +348,6 @@ header {
 .about-headline {
   color: #eae9e0;
   font-weight: 500;
-  font-family: "Sansita";
   cursor: default; }
 
 #about-box hr {
@@ -422,7 +421,8 @@ header {
   box-shadow: inset 45px 45px 82px #b8b8b8, inset -41px -41px 82px #ffffff; }
 
 .skill-headline {
-  color: #343A40; }
+  color: #343A40;
+  font-family: "Sansita"; }
 
 .showcase-box hr {
   background-color: #ccc !important; }
