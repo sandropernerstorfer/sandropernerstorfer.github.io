@@ -341,7 +341,6 @@ border: 0;
 
 #about-box hr{
     background-color: #9AE5E6;
-    margin-bottom: 40px;
 }
 
 #about-box-1 p{
@@ -423,12 +422,20 @@ border: 0;
     flex-direction: row;
     margin: 0;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 25px;
+    box-shadow: inset 45px 45px 82px #b8b8b8, inset -41px -41px 82px #ffffff;
+}
+
+.skill-headline{
+    color: #343A40;
+}
+
+.showcase-box hr{
+    background-color: #ccc !important;
 }
 
 .showcase-box .card{
     box-sizing: content-box;
-    border-radius: 20px;
     width: 120px;
     height: 170px;
     padding: 10px;
