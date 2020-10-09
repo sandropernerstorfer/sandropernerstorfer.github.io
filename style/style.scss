@@ -337,6 +337,7 @@ border: 0;
 .about-headline{
     color: #eae9e0;
     font-weight: 500;
+    font-family: "Sansita";
 }
 
 #about-box hr{
@@ -344,9 +345,8 @@ border: 0;
 }
 
 #about-box-1 p{
-    font-family: "Ubuntu";
-    font-weight: 300;
-    font-size: 200%;
+    font-weight: 200;
+    font-size: 180%;
 }
 
 @media (max-width: 600px){
@@ -422,7 +422,7 @@ border: 0;
     flex-direction: row;
     margin: 0;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: inset 45px 45px 82px #b8b8b8, inset -41px -41px 82px #ffffff;
 }
 
@@ -448,4 +448,8 @@ border: 0;
 .card img{
     height: 120px;
     width: 100%;
+}
+
+.card p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
