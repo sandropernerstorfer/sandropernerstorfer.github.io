@@ -461,5 +461,11 @@ header {
 @media (max-width: 320px) {
   .skill-headline {
     font-size: 100%; } }
+.fa-hammer {
+  color: yellow;
+  font-size: 500%; }
+
+.wip-line {
+  color: #ccc; }
 
 /*# sourceMappingURL=style.css.map */
