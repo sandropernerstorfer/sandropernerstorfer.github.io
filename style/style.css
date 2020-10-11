@@ -347,9 +347,8 @@ header {
 
 .about-headline {
   color: #eae9e0;
-  font-weight: 300;
-  cursor: default;
-  font-family: "Sansita"; }
+  font-weight: 200;
+  cursor: default; }
 
 #about-box hr {
   background-color: #9AE5E6; }
