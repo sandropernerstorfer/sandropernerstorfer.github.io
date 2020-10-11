@@ -315,7 +315,7 @@ border: 0;
 #about-box{
     background-color: #191A1F;
     width: 100%;
-    height: 1500px;
+    height: 100%;
 }
 
 #about-spacing{
@@ -422,15 +422,19 @@ border: 0;
     font-size: 350%;
 }
 
+#skill-row{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .showcase-box{
     padding-top: 7px;
     width: 100%;
     height: auto;
     flex-direction: row;
     margin: 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: inset 45px 45px 82px #b8b8b8, inset -41px -41px 82px #ffffff;
 }
 
 .skill-headline{

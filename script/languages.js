@@ -10,8 +10,8 @@ const english =
         ab1 : "A motivated Web-Developer from Vienna with a desire to learn.",
         ab2 : "I always had a good time playing around with creativity and logic, so some of my biggest interests are: Tech, Development, Art and playing Guitar.",
         ab3 : "This page was created to offer a quick overview of my work, and myself.",
-        skill1 : "I mainly work with :",
-        skill2 : "...and have experience with :"
+        skill1 : "I mainly work with",
+        skill2 : "...and have experience with"
     };
 
 const german = 
@@ -26,6 +26,6 @@ const german =
         ab1 : "Ein motivierter und lerneifriger Web-Entwickler aus Wien.",
         ab2 : "Ich hatte immer schon sehr viel Spass an dem Zusammenspiel von Kreativität und Logik, daher zählen zu meinen größten Interessen: Technik, Entwicklung, Kunst und Gitarrespielen.",
         ab3 : "Diese Seite wurde erstellt um einen kleinen Überblick von mir und ein paar meiner Projekte zu schaffen.",
-        skill1 : "Ich arbeite hauptsächlich mit :",
-        skill2 : "...und habe Erfahrung mit :"
+        skill1 : "Ich arbeite hauptsächlich mit",
+        skill2 : "...und habe Erfahrung mit"
     };
