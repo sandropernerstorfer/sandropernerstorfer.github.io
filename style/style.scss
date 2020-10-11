@@ -442,7 +442,6 @@ border: 0;
 
 .skill-headline{
     color: #343A40;
-    font-family: "Sansita";
 }
 
 .showcase-box hr{
@@ -470,7 +469,7 @@ border: 0;
     cursor: default;
 }
 
-@media (max-width: 423px){
+@media (max-width: 440px){
     .skill-headline{
         font-size: 120%;
     }

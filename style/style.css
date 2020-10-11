@@ -427,8 +427,7 @@ header {
   margin: 0; }
 
 .skill-headline {
-  color: #343A40;
-  font-family: "Sansita"; }
+  color: #343A40; }
 
 .showcase-box hr {
   background-color: #ccc !important; }
@@ -451,7 +450,7 @@ header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: default; }
 
-@media (max-width: 423px) {
+@media (max-width: 440px) {
   .skill-headline {
     font-size: 120%; } }
 @media (max-width: 401px) {
