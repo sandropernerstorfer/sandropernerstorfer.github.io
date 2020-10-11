@@ -379,6 +379,9 @@ header {
   -moz-box-shadow: -11px -11px 40px 1px rgba(0, 0, 0, 0.61);
   box-shadow: -11px -11px 40px 1px rgba(0, 0, 0, 0.61); }
 
+#code-btn, #creative-btn {
+  cursor: default; }
+
 .icon-button {
   border-radius: 5px;
   opacity: 0.5;
