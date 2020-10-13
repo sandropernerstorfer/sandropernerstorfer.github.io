@@ -166,17 +166,71 @@ header{
     }
     
     #intro-desc{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+    .fa-play-circle{
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 550px){
     #intro-name{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     #intro-desc{
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    .fa-play-circle{
+        font-size: 1.8rem;
+    }
+    #language-bubble{
+        width: 40px;
+        height: 40px;
+    }
+    .fa-flag{
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 455px){
+    #intro-name{
+        font-size: 2rem;
+    }
+    #intro-desc{
+        font-size: 1.3rem;
+    }
+    .fa-play-circle{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 340px){
+    #intro-name{
+        font-size: 1.7rem;
+    }
+    #intro-desc{
+        font-size: 1.1rem;
+    }
+    .fa-play-circle{
+        font-size: 1.4rem;
+    }
+    #language-bubble{
+        width: 30px;
+        height: 30px;
+    }
+    .fa-flag{
+        line-height: 28px;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 300px){
+    #intro-name{
+        font-size: 1.5rem;
+    }
+    #intro-desc{
+        font-size: 0.9rem;
     }
 }
 
