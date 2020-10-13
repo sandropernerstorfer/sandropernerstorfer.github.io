@@ -374,7 +374,7 @@ border: 0;
 
 #about-spacing{
     width: 100%;
-    height: 100px;
+    height: 50px;
 }
 
 @media (max-width: 992px){
@@ -388,95 +388,39 @@ border: 0;
     cursor: default;
 }
 
-#about-box-1{
-    border-radius: 15px;
-    color: #ABABAB;
-}
-
-.about-headline{
-    color: #eae9e0;
-    font-weight: 200;
-    cursor: default;
-}
-
-#about-box hr{
+.blue-line{
     background-color: #9AE5E6;
 }
 
-#about-box-1 p{
+#about-text-box p{
+    color: #ccc;
     font-weight: 200;
-    font-size: 180%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     cursor: default;
 }
 
-@media (max-width: 600px){
-    #about-box-1 p{
-        font-size: 150%;
-    }
-
-    .about-headline{
-        font-size: 160%;
-    }
+.about-image{
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 510px){
-    #about-box-1 p{
-        font-size: 100%;
-    }
+.about-image img{
+    width: 100%;
+    height: auto;
 }
 
 #about-box-2{
     border-radius: 20px;
 }
 
-#modal-content img{
-    border-radius: 10px;
-    height: auto;
-    width: 100%;
-    -webkit-box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
-    -moz-box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
-    box-shadow: -11px -11px 40px 1px rgba(0,0,0,0.61);
-}
+// ****************************** TECH STACK Section ****** //
 
-#code-btn, #creative-btn{
-    cursor: default;
-}
-
-.icon-button{
-    border-radius: 5px;
-    opacity: 0.5;
-    transition: opacity .4s;
-    color: #EAE9E0;
-}
-
-.icon-button:hover{
-    opacity: 1;
-}
-
-#front-icon{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    font-size: 280%;
-    text-align: center;
-    line-height: 85px;
-    color: #EAE9E0;
-    transition: all .4s;
-}
-
-#dev-icon{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    font-size: 280%;
-    text-align: center;
-    line-height: 85px;
-    color: #EAE9E0;
-    transition: all .4s;
-}
-
-#dev-icon:hover, #front-icon:hover{
-    font-size: 350%;
+#skill-section{
+    background-color: #fff;
+    -webkit-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
+    -moz-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
+    box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
 }
 
 #skill-row{
@@ -492,6 +436,7 @@ border: 0;
     height: auto;
     flex-direction: row;
     margin: 0;
+    border: 2px solid #ccc;
 }
 
 .skill-headline{
@@ -504,17 +449,18 @@ border: 0;
 
 .showcase-box .card{
     box-sizing: content-box;
-    width: 120px;
+    width: 100px;
     height: 170px;
     padding: 10px;
     margin: 10px auto;
     color: #343A40;
     background-color: transparent;
     border: none;
+    font-size: 78%;
 }
 
 .card img{
-    height: 120px;
+    height: 100px;
     width: 100%;
 }
 
@@ -547,6 +493,8 @@ border: 0;
         font-size: 100%;
     }
 }
+
+// *************************************************************** //
 
 // *** W.I.P. *** //
 
