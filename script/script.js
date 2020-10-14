@@ -108,13 +108,3 @@ function insertContent(i){
 }
 
 // ****************************************************************************** //
-// *** 2 ICONS - EVENTS *** //
-
-document.getElementById('code-btn').addEventListener('click', function(){iconAction('code');}, false);
-document.getElementById('creative-btn').addEventListener('click', function(){iconAction('creative');}, false);
-
-function iconAction(a){
-    console.log(a);
-}
-
-// ****************************************************************************** //
