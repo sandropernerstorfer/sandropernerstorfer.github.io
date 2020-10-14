@@ -373,15 +373,9 @@ header {
 #about-box {
   background-color: #191A1F;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: "Ubuntu"; }
 
-#about-spacing {
-  width: 100%;
-  height: 50px; }
-
-@media (max-width: 992px) {
-  #about-spacing {
-    height: 30px; } }
 .section-headline {
   font-weight: 300;
   cursor: default; }
@@ -392,7 +386,7 @@ header {
 #about-text-box p {
   color: #ccc;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   cursor: default; }
 
@@ -402,8 +396,12 @@ header {
 
 .about-image img {
   width: 100%;
-  height: auto; }
+  height: 380px; }
 
+@media (max-width: 992px) {
+  .about-image img {
+    width: 100%;
+    height: 100%; } }
 #about-box-2 {
   border-radius: 20px; }
 
