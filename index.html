@@ -40,7 +40,7 @@
       <div id="intro-box">
         <p id="intro-name">Sandro Pernerstorfer</p>
         <p id="intro-desc"><span class="color-tag">|</span><span id="word-frontend"> Frontend </span><span class="color-tag">| </span><span id="word-development" class="language-switch"></span><span class="color-tag"> |</span></p>
-        <span href="#about-box"><button id="intro-button" class="btn mt-3 btn-lg"><i class="far fa-play-circle"></i></button></span>
+        <span href="#main-box"><button id="intro-button" class="btn mt-3 btn-lg"><i class="far fa-play-circle"></i></button></span>
       </div>
       <div id="landing-shape" class="custom-shape-divider-bottom-1601852352">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -52,20 +52,15 @@
 <!-- MAIN CONTENT -->
     <main id="main-box">
 <!-- NAVBAR -->
-      <nav id="navbar" class="navbar justify-content-center pt-lg-2 pt-sm-2">
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <span class="nav-link mr-4" href="#about-box"><span class="nav-category language-switch"></span></span>
-            </li>
-            <li class="nav-item">
-              <span class="nav-link mr-4" href="#projects-box"><span class="nav-category language-switch"></span></span>
-            </li>
-            <li class="nav-item">
-              <span class="nav-link mr-4" href="#contact-box"><span class="nav-category language-switch"></span></span>
+      <nav id="navbar" class="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <span class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-category"><i class="fas fa-bars"></i></span></span>
+              <div class="dropdown-menu dropdown-left-manual" aria-labelledby="navbarDropdownMenuLink">
+                <span href="#main-box" class="dropdown-item language-switch" id="drop-1"></span><hr>
+                <span href="#projects-box" class="dropdown-item language-switch" id="drop-2"></span><hr>
+                <span href="#contact-box" class="dropdown-item language-switch" id="drop-3"></span>
+              </div>
             </li>
           </ul>
         </div>
