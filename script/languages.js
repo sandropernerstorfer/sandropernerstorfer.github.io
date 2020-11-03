@@ -1,10 +1,10 @@
 const english = 
     {
-        modal : "Choose Language",
-        desc : "Web Development",
         nav1 : "About",
         nav2 : "Projects",
         nav3 : "Contact",
+        modal : "Choose Language",
+        desc : "Web Development",
         about : "About",
         greet : "Hey, i´m Sandro,",
         ab1 : "a motivated Web-Developer from Vienna with a desire to learn.",
@@ -16,11 +16,11 @@ const english =
 
 const german = 
     {
-        modal : "Sprache ändern",
-        desc : "Web Entwicklung",
         nav1 : "Über Mich",
         nav2 : "Projekte",
         nav3 : "Kontakt",
+        modal : "Sprache ändern",
+        desc : "Web Entwicklung",
         about : "Über Mich",
         greet : "Hey, ich bin Sandro,",
         ab1 : "ein motivierter und lerneifriger Web-Entwickler aus Wien.",

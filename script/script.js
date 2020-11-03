@@ -38,12 +38,12 @@ let wordFront = document.getElementById('word-frontend');
 let wordDev = document.getElementById('word-development');
 let introBtn = document.getElementById('intro-button');
 let languageBub = document.getElementById('language-bubble');
+let goIcon = document.getElementById('goIcon');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
     setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1";',1);
-    setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1";',1500);
-    setTimeout('wordDev.style.opacity = "1";',3500);
-    setTimeout('introBtn.style.opacity = ".9"; introBtn.style.cursor = "pointer"; languageBub.style.opacity = ".9"; languageBub.style.cursor = "pointer"',5500);
+    setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"; wordDev.style.opacity = "1";',1000);
+    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; languageBub.style.opacity = ".9"; languageBub.style.cursor = "pointer"',2500);
 }
 
 introFade();
@@ -66,8 +66,10 @@ introFade();
 
 introBtn.addEventListener('click',showContent,false);
 const mainBox = document.getElementById('main-box');
+const navbar = document.getElementById('navbar');
 
 function showContent(){
+    navbar.style.opacity = '1';
     mainBox.style.display = 'block';
 }
 

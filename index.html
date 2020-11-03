@@ -15,6 +15,21 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <span class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-category"><i class="fas fa-bars"></i></span></span>
+        <div class="dropdown-menu dropdown-left-manual" aria-labelledby="navbarDropdownMenuLink">
+          <span href="#main-box" class="dropdown-item language-switch" id="drop-1"></span><hr>
+          <span href="#projects-box" class="dropdown-item language-switch" id="drop-2"></span><hr>
+          <span href="#contact-box" class="dropdown-item language-switch" id="drop-3"></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- NAVBAR END -->
   <div id="language-bubble" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-flag"></i></div>
 <!-- Modal -->
 <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -40,7 +55,7 @@
       <div id="intro-box">
         <p id="intro-name">Sandro Pernerstorfer</p>
         <p id="intro-desc"><span class="color-tag">|</span><span id="word-frontend"> Frontend </span><span class="color-tag">| </span><span id="word-development" class="language-switch"></span><span class="color-tag"> |</span></p>
-        <span href="#main-box"><button id="intro-button" class="btn mt-3 btn-lg"><i class="far fa-play-circle"></i></button></span>
+        <span href="#main-box"><button id="intro-button" class="btn mt-3 btn-lg"><i id="goIcon" class="far fa-play-circle"></i></button></span>
       </div>
       <div id="landing-shape" class="custom-shape-divider-bottom-1601852352">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -51,21 +66,6 @@
 <!-- INTRO END -->
 <!-- MAIN CONTENT -->
     <main id="main-box">
-<!-- NAVBAR -->
-      <nav id="navbar" class="navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <span class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-category"><i class="fas fa-bars"></i></span></span>
-              <div class="dropdown-menu dropdown-left-manual" aria-labelledby="navbarDropdownMenuLink">
-                <span href="#main-box" class="dropdown-item language-switch" id="drop-1"></span><hr>
-                <span href="#projects-box" class="dropdown-item language-switch" id="drop-2"></span><hr>
-                <span href="#contact-box" class="dropdown-item language-switch" id="drop-3"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-<!-- NAVBAR END -->
 <!-- ABOUT SECTION -->
       <section id="about-box" class="pt-5 pb-5 mb-5">
         <div class="about-dark"></div>

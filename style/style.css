@@ -168,18 +168,18 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #343A40;
-  background-color: #EAE9E0; }
+  color: #000;
+  background-color: #fff; }
 
 #intro-box {
   padding: 0px 20px; }
 
 #intro-name {
-  font-family: "Sansita";
-  font-weight: 500;
-  font-size: 3rem;
+  font-family: "Ubuntu";
+  font-weight: 200;
+  font-size: 5rem;
   opacity: 0;
-  transition: opacity 4s;
+  transition: opacity 2s;
   cursor: default; }
 
 #intro-desc {
@@ -188,15 +188,15 @@ header {
   font-size: 2rem;
   cursor: default;
   opacity: 0;
-  transition: opacity 4s; }
+  transition: opacity 2s; }
 
 #word-frontend {
   opacity: 0;
-  transition: opacity 4s; }
+  transition: opacity 2s; }
 
 #word-development {
   opacity: 0;
-  transition: opacity 4s; }
+  transition: opacity 2s; }
 
 #intro-button {
   opacity: 0;
@@ -271,7 +271,7 @@ header {
   #intro-desc {
     font-size: 0.9rem; } }
 #landing-shape {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 3s;
   z-index: 1; }
 
@@ -300,11 +300,13 @@ header {
   display: none; }
 
 #navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 5;
-  width: 50px; }
+  width: 50px;
+  opacity: 0;
+  transition: opacity 1s; }
 
 .fa-bars {
   line-height: 50px;
