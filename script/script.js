@@ -14,7 +14,6 @@ let isMobile = false;
 
 // ******************************************************************************************************* //
 
-let landingShape = document.getElementById('landing-shape');
 let currentVW = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 let currentVH = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
@@ -25,8 +24,6 @@ let headerTag = document.getElementById('header-tag');
 if(isMobile)
 {
     headerTag.style.height = currentVH+'px';
-    
-    landingShape.style.display = 'none';
 };
 
 // ****************************************** //
@@ -39,9 +36,11 @@ let wordDev = document.getElementById('word-development');
 let introBtn = document.getElementById('intro-button');
 let languageBub = document.getElementById('language-bubble');
 let goIcon = document.getElementById('goIcon');
+let shape1 = document.getElementById('landing-shape-1');
+let shape2 = document.getElementById('landing-shape-2');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
-    setTimeout('introName.style.opacity = "1"; landingShape.style.opacity = "1";',1);
+    setTimeout('introName.style.opacity = "1"; introName.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
     setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"; wordDev.style.opacity = "1";',1000);
     setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; languageBub.style.opacity = ".9"; languageBub.style.cursor = "pointer"',2500);
 }
