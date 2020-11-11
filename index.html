@@ -17,16 +17,16 @@
 <body>
   <!-- NAVBAR -->
   <nav id="navbar" class="navbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <span class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-category"><i class="fas fa-bars"></i></span></span>
-        <div class="dropdown-menu dropdown-left-manual" aria-labelledby="navbarDropdownMenuLink">
-          <span href="#main-box" class="dropdown-item language-switch" id="drop-1"></span><hr>
+    <div class="dropleft">
+      <button id="menu-icon" type="button" class="btn dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="dropdown-menu">
+        <span href="#main-box" class="dropdown-item language-switch" id="drop-1"></span><hr>
           <span href="#projects-box" class="dropdown-item language-switch" id="drop-2"></span><hr>
           <span href="#contact-box" class="dropdown-item language-switch" id="drop-3"></span>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </nav>
 <!-- NAVBAR END -->
@@ -53,7 +53,7 @@
 <!-- INTRO -->
     <header id="header-tag">
       <div id="intro-box">
-        <p id="intro-name">Sandro Pernerstorfer</p>
+        <p id="intro-name">[ Hello i'm Sandro ]</p>
         <p id="intro-desc"><span id="word-frontend"> Frontend </span><span class="color-tag">| </span><span id="word-development" class="language-switch"></span></p>
         <span href="#main-box"><button id="intro-button" class="btn mt-3 btn-lg"><i id="goIcon" class="far fa-play-circle"></i></button></span>
       </div>
