@@ -368,10 +368,7 @@ header {
   border-radius: 20px; }
 
 #skill-section {
-  background-color: #fff;
-  -webkit-box-shadow: inset 1px 36px 41px -30px rgba(0, 0, 0, 0.71);
-  -moz-box-shadow: inset 1px 36px 41px -30px rgba(0, 0, 0, 0.71);
-  box-shadow: inset 1px 36px 41px -30px rgba(0, 0, 0, 0.71); }
+  background-color: #fff; }
 
 .showcase-box {
   padding-top: 7px;
@@ -379,10 +376,12 @@ header {
   height: auto;
   flex-direction: row;
   margin: 0;
-  border: 2px solid #ccc; }
+  border: 1px solid #ccc; }
 
 .skill-headline {
-  color: #343A40; }
+  font-weight: 300;
+  color: #343A40;
+  font-size: 1.5em; }
 
 .showcase-box hr {
   background-color: #ccc !important; }

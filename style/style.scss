@@ -378,9 +378,11 @@ header{
 
 #skill-section{
     background-color: #fff;
-    -webkit-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
-    -moz-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
-    box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.71);
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    // -webkit-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.31);
+    // -moz-box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.31);
+    // box-shadow: inset 1px 36px 41px -30px rgba(0,0,0,0.31);
 }
 
 .showcase-box{
@@ -389,11 +391,13 @@ header{
     height: auto;
     flex-direction: row;
     margin: 0;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 .skill-headline{
+    font-weight: 300;
     color: #343A40;
+    font-size: 1.5em;
 }
 
 .showcase-box hr{
