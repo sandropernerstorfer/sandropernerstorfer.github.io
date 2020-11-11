@@ -78,6 +78,11 @@
   src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format("truetype");
   font-style: italic;
   font-weight: 700; }
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/Rubik/Rubik-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
@@ -92,8 +97,8 @@
   color: #fff; }
 
 body {
-  background-color: #191A1F;
-  padding-right: 0 !important; }
+  background-color: #fff;
+  padding: 0 20px; }
 
 html {
   overflow-y: scroll;
@@ -101,34 +106,48 @@ html {
   overscroll-behavior-x: none; }
 
 .color-tag {
-  color: #9AE5E6; }
+  color: #6f2da8; }
+
+#navbar {
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 1s; }
+
+#menu-icon {
+  cursor: default; }
+
+.fa-bars {
+  font-size: 2rem;
+  color: #6f2da8;
+  transition: color .3s;
+  cursor: pointer; }
+
+.fa-bars:hover {
+  color: #6f2da8; }
 
 #language-bubble {
-  background-color: #343A40;
-  border: 2px solid #9AE5E6;
-  color: #9AE5E6;
+  color: #6f2da8;
   position: fixed;
-  bottom: 10px;
+  top: 27px;
   right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   z-index: 2;
   text-align: center;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 2s, color .3s;
   cursor: default;
   z-index: 6; }
 
 #language-bubble:hover {
-  background-color: #23272b; }
+  color: #6f2da8; }
 
 .fa-flag {
-  line-height: 48px; }
+  font-size: 1.8rem; }
 
 .modal {
   font-family: "Ubuntu";
-  background-color: #191A1F;
   opacity: 1; }
 
 .modal-title {
@@ -168,23 +187,29 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000;
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: "Rubik";
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
 
 #intro-box {
   padding: 0px 20px; }
 
 #intro-name {
-  font-family: "Ubuntu";
   font-weight: 200;
-  font-size: 5rem;
+  font-size: 4.5rem;
+  color: #fff;
   opacity: 0;
-  transition: opacity 2s;
+  margin-bottom: 80px;
+  transition: opacity 3s, margin-bottom 1.5s;
   cursor: default; }
 
 #intro-desc {
-  font-family: "Ubuntu";
   font-weight: 300;
+  color: #fff;
   font-size: 2rem;
   cursor: default;
   opacity: 0;
@@ -204,14 +229,14 @@ header {
   cursor: default;
   text-align: center;
   vertical-align: middle;
-  color: #23272b; }
+  color: #ccc; }
 
 .fa-play-circle {
   font-size: 40px;
   font-weight: 500;
   transition: all .3s; }
   .fa-play-circle:hover {
-    color: crimson; }
+    color: #6f2da8; }
 
 @media (max-width: 650px) {
   #intro-name {
@@ -230,14 +255,7 @@ header {
     font-size: 1.5rem; }
 
   .fa-play-circle {
-    font-size: 1.8rem; }
-
-  #language-bubble {
-    width: 40px;
-    height: 40px; }
-
-  .fa-flag {
-    line-height: 38px; } }
+    font-size: 1.8rem; } }
 @media (max-width: 455px) {
   #intro-name {
     font-size: 2rem; }
@@ -270,12 +288,7 @@ header {
 
   #intro-desc {
     font-size: 0.9rem; } }
-#landing-shape {
-  opacity: 1;
-  transition: opacity 3s;
-  z-index: 1; }
-
-.custom-shape-divider-bottom-1601852352 {
+.custom-shape-divider-bottom-1604414453 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -284,14 +297,33 @@ header {
   line-height: 0;
   transform: rotate(180deg); }
 
-.custom-shape-divider-bottom-1601852352 svg {
+#landing-shape-1 {
+  opacity: 1;
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 250px; }
+  height: 126px; }
 
-.custom-shape-divider-bottom-1601852352 .shape-fill {
-  fill: #191A1F; }
+.custom-shape-divider-bottom-1604414453 .shape-fill {
+  fill: #fff; }
+
+.custom-shape-divider-top-1604414536 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+
+#landing-shape-2 {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 0px;
+  transition: height 2s; }
+
+.custom-shape-divider-top-1604414536 .shape-fill {
+  fill: #fff; }
 
 @media (max-height: 700px) {
   #landing-shape {
@@ -299,25 +331,11 @@ header {
 #main-box {
   display: none; }
 
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 50px;
-  opacity: 0;
-  transition: opacity 1s; }
-
-.fa-bars {
-  line-height: 50px;
-  font-size: 1.8rem;
-  color: #9AE5E6; }
-
 #about-box {
-  background-color: #191A1F;
+  background-color: #fff;
   width: 100%;
   height: 100%;
-  font-family: "Ubuntu"; }
+  font-family: "Rubik"; }
 
 .section-headline {
   font-weight: 300;
@@ -327,7 +345,7 @@ header {
   background-color: #9AE5E6; }
 
 #about-text-box p {
-  color: #ccc;
+  color: #777777;
   font-weight: 200;
   font-size: 1rem;
   letter-spacing: 1px;
