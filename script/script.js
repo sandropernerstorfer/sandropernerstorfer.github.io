@@ -38,11 +38,12 @@ let goIcon = document.getElementById('goIcon');
 let shape1 = document.getElementById('landing-shape-1');
 let shape2 = document.getElementById('landing-shape-2');
 const navbar = document.getElementById('navbar');
+const drop_icon = document.getElementById('bars');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
     setTimeout('introName.style.opacity = "1"; introName.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
     setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"; wordDev.style.opacity = "1";',1000);
-    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; navbar.style.opacity = "1";',2500);
+    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; navbar.style.opacity = "1"; drop_icon.style.cursor = "pointer"',2500);
 }
 
 introFade();
