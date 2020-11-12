@@ -41,7 +41,7 @@ html{
 #navbar{
     position: fixed;
     top: 10px;
-    right: 50px;
+    right: 0;
     z-index: 5;
     opacity: 0;
     transition: opacity 1s;
@@ -51,11 +51,15 @@ html{
     cursor: default;
 }
 
+#dropdown-items{
+    display: none;
+}
+
 .fa-bars{
     font-size: 2rem;
     color: #6f2da8;
     transition: color .3s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .fa-bars:hover{
@@ -64,66 +68,22 @@ html{
 
 // ******************************************************************* //
 
-#language-bubble{
-    // background-color: #343A40;
-    // border: 2px solid #9AE5E6;
-    color: #6f2da8;
-    position: fixed;
-    top: 27px;
-    right: 20px;
-    // width: 50px;
-    // height: 50px;
-    // border-radius: 50%;
-    z-index: 2;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 2s, color .3s;
-    cursor: default;
-    z-index: 6;
-}
-
-#language-bubble:hover{
-    color: #6f2da8;
-}
-
-.fa-flag{
-    font-size: 1.8rem;
-}
-
-.modal{
-    font-family: "Ubuntu";
-    opacity: 1;
-}
-
-.modal-title{
-    cursor: default;
-}
-
-.modal-content{
-    border-radius: 20px;
-    background-color: #eae9e0;
-    color: #343A40;
-}
-
-#languages{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 .lang-box{
-    width: 50%;
+    width: 100%;
     position: relative;
+    margin-left: 12px;
 }
 
 .lang-box>img{
     width: 1rem;
     height: 1rem;
+    right: -20px;
+    top: 3px;
+    position: absolute;
 }
 
 .language-btn{
     color: #343A40;
-    border-bottom: 2px solid #eae9e0;
 }
 
 .btn:focus,.btn:active {
@@ -187,7 +147,7 @@ header{
     cursor: default;
     text-align: center;
     vertical-align: middle;
-    color: #ccc;
+    color: #fff;
 }
 
 .fa-play-circle{
@@ -199,9 +159,15 @@ header{
     }
 }
 
+@media (max-width: 710px){
+    #intro-name{
+        font-size: 3.3rem;
+    }
+}
+
 @media (max-width: 650px){
     #intro-name{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     
     #intro-desc{
@@ -218,7 +184,7 @@ header{
     }
     
     #intro-desc{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .fa-play-circle{
         font-size: 1.8rem;
@@ -237,20 +203,23 @@ header{
         font-size: 2rem;
     }
     #intro-desc{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .fa-play-circle{
         font-size: 1.6rem;
     }
 }
 
-@media (max-width: 340px){
+@media (max-width: 360px){
     #intro-name{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     #intro-desc{
-        font-size: 1.1rem;
+        font-size: .9rem;
     }
+}
+
+@media (max-width: 340px){
     .fa-play-circle{
         font-size: 1.4rem;
     }
@@ -266,10 +235,10 @@ header{
 
 @media (max-width: 300px){
     #intro-name{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     #intro-desc{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
