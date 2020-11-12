@@ -87,15 +87,17 @@ document.getElementById('btn-de').addEventListener('click', function(){localStor
 function languageHandling(x){
 let localStore = localStorage.getItem('sandroLanguage');
 
+const ticks = document.getElementsByClassName('language-tick');
+
 if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
-    $('#box-eng').css('display', 'none');
-    $('#box-de').css('display', 'inline');
+    $(ticks[0]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
+    $(ticks[1]).css({'right' : '0px', 'opacity' : '0'});
     insertContent(english);
 }
 else if(localStore === 'german' || x === german){
-    $('#box-eng').css('display', 'inline');
-    $('#box-de').css('display', 'none');
+    $(ticks[0]).css({'right' : '0px', 'opacity' : '0'});
+    $(ticks[1]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
     insertContent(german);
 }
 
