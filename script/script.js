@@ -34,15 +34,15 @@ let introDesc = document.getElementById('intro-desc');
 let wordFront = document.getElementById('word-frontend');
 let wordDev = document.getElementById('word-development');
 let introBtn = document.getElementById('intro-button');
-let languageBub = document.getElementById('language-bubble');
 let goIcon = document.getElementById('goIcon');
 let shape1 = document.getElementById('landing-shape-1');
 let shape2 = document.getElementById('landing-shape-2');
+const navbar = document.getElementById('navbar');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
     setTimeout('introName.style.opacity = "1"; introName.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
     setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"; wordDev.style.opacity = "1";',1000);
-    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; languageBub.style.opacity = ".9"; languageBub.style.cursor = "pointer"',2500);
+    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer"; navbar.style.opacity = "1";',2500);
 }
 
 introFade();
@@ -65,11 +65,11 @@ introFade();
 
 introBtn.addEventListener('click',showContent,false);
 const mainBox = document.getElementById('main-box');
-const navbar = document.getElementById('navbar');
+const dd_items = document.getElementById('dropdown-items');
 
 function showContent(){
-    navbar.style.opacity = '1';
     mainBox.style.display = 'block';
+    dd_items.style.display = 'inline';
 }
 
 // ****************************************************************************** //
@@ -79,8 +79,8 @@ languageHandling();
 
 // *** GET BUTTONS INSIDE LANGUAGE MODAL *** //
 
-document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);$('#exampleModalCenter').modal('hide');}, false);
-document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);$('#exampleModalCenter').modal('hide');}, false);
+document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);}, false);
+document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);}, false);
 
 // *** FUNCTION FOR LANGUAGE INSERTION *** //
 
@@ -89,13 +89,13 @@ let localStore = localStorage.getItem('sandroLanguage');
 
 if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
-    $('#btn-eng').prop('disabled', true);
-    $('#btn-de').prop('disabled', false);
+    $('#box-eng').css('display', 'none');
+    $('#box-de').css('display', 'inline');
     insertContent(english);
 }
 else if(localStore === 'german' || x === german){
-    $('#btn-de').prop('disabled', true);
-    $('#btn-eng').prop('disabled', false);
+    $('#box-eng').css('display', 'inline');
+    $('#box-de').css('display', 'none');
     insertContent(german);
 }
 
