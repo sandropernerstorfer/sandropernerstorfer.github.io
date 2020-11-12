@@ -107,7 +107,8 @@ html {
   overscroll-behavior-x: none; }
 
 .color-tag {
-  color: #6f2da8; }
+  color: #6f2da8;
+  opacity: .8; }
 
 #side-nav {
   text-align: center;
