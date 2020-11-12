@@ -38,32 +38,38 @@ html{
 
 // ***************************************** Navbar *************** //
 
-#navbar{
-    position: fixed;
-    top: 10px;
-    right: 0;
-    z-index: 5;
+#side-nav{
+    height: 300px;
+    width: 150px;
     opacity: 0;
-    transition: opacity 1s;
-}
-
-#menu-icon{
-    cursor: default;
-}
-
-#dropdown-items{
-    display: none;
-}
-
-.fa-bars{
-    font-size: 2rem;
-    color: #6f2da8;
-    transition: color .3s;
-    cursor: default;
-}
-
-.fa-bars:hover{
-    color: #6f2da8;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #6f2da8;
+    border-right: 0;
+    border-top: 0;
+    background-color: #fff;
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    right: -150px;
+    transition: right .5s, opacity .6s;
+    &:hover{
+        right: 0;
+    }
+    &::before{
+        content: "\2634";
+        text-align: center;
+        align-self: center;
+        font-size: 2rem;
+        background-color: #6f2da8;
+        color: #fff;
+        display: block;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        right: 35px;
+        top: -5px;
+    }
 }
 
 // ******************************************************************* //
