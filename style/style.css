@@ -110,11 +110,12 @@ html {
   color: #6f2da8; }
 
 #side-nav {
-  height: 300px;
+  text-align: center;
+  height: 100%;
   width: 150px;
   opacity: 0;
-  border-bottom-left-radius: 20px;
-  border: 2px solid #6f2da8;
+  padding-top: 10px;
+  border: 1px solid #ccc;
   border-right: 0;
   border-top: 0;
   background-color: #fff;
@@ -127,33 +128,49 @@ html {
     right: 0; }
   #side-nav::before {
     content: "\2634";
-    text-align: center;
+    text-align: start;
     align-self: center;
     font-size: 2rem;
+    padding: 0 0 5px 10px;
     background-color: #6f2da8;
     color: #fff;
     display: block;
     height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    width: 200px;
+    border-bottom-left-radius: 20px;
     position: relative;
-    right: 35px;
-    top: -5px; }
+    right: 45px;
+    top: -10px;
+    -webkit-box-shadow: -11px 7px 31px -1px #cccccc;
+    -moz-box-shadow: -11px 7px 31px -1px #cccccc;
+    box-shadow: -11px 7px 31px -1px #cccccc; }
+
+#drop-1, #drop-2, #drop-3 {
+  cursor: pointer;
+  transition: color .2s; }
+  #drop-1:hover, #drop-2:hover, #drop-3:hover {
+    color: #6f2da8; }
 
 .lang-box {
   width: 100%;
-  position: relative;
-  margin-left: 12px; }
+  padding-left: 5px; }
 
-.lang-box > img {
-  width: 1rem;
-  height: 1rem;
-  right: -20px;
-  top: 3px;
-  position: absolute; }
+.language-btn > img {
+  width: 1.5rem;
+  height: 1.5rem; }
 
-.language-btn {
-  color: #343A40; }
+#box-eng, #box-de {
+  height: 40px;
+  position: relative; }
+
+.language-tick {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  top: 7px;
+  right: 0px;
+  font-size: 1.2rem;
+  transition: right .5s, opacity .5s; }
 
 .btn:focus, .btn:active {
   outline: none !important;

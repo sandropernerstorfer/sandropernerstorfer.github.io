@@ -18,7 +18,6 @@
 
 body{
     background-color: #fff;
-    // padding-right: 0 !important;
     padding: 0 20px;
     overflow-x: hidden;
 }
@@ -39,11 +38,12 @@ html{
 // ***************************************** Navbar *************** //
 
 #side-nav{
-    height: 300px;
+    text-align: center;
+    height: 100%;
     width: 150px;
     opacity: 0;
-    border-bottom-left-radius: 20px;
-    border: 2px solid #6f2da8;
+    padding-top: 10px;
+    border: 1px solid #ccc;
     border-right: 0;
     border-top: 0;
     background-color: #fff;
@@ -57,45 +57,68 @@ html{
     }
     &::before{
         content: "\2634";
-        text-align: center;
+        text-align: start;
         align-self: center;
         font-size: 2rem;
+        padding: 0 0 5px 10px;
         background-color: #6f2da8;
         color: #fff;
         display: block;
         height: 50px;
-        width: 50px;
-        border-radius: 50%;
+        width: 200px;
+        border-bottom-left-radius: 20px;
         position: relative;
-        right: 35px;
-        top: -5px;
+        right: 45px;
+        top: -10px;
+        -webkit-box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
+        -moz-box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
+        box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
     }
 }
 
-// ******************************************************************* //
+// -------------------------- Section Links --- //
+
+#drop-1, #drop-2, #drop-3{
+    cursor: pointer;
+    transition: color .2s;
+    &:hover{
+        color: #6f2da8;
+    }
+}
+
+// -------------------------- Language Switch --- //
 
 .lang-box{
     width: 100%;
+    padding-left: 5px;
+}
+
+.language-btn>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#box-eng, #box-de{
+    height: 40px;
     position: relative;
-    margin-left: 12px;
 }
 
-.lang-box>img{
-    width: 1rem;
-    height: 1rem;
-    right: -20px;
-    top: 3px;
+.language-tick{
     position: absolute;
-}
-
-.language-btn{
-    color: #343A40;
+    color: #fff;
+    opacity: 0;
+    top: 7px;
+    right: 0px;
+    font-size: 1.2rem;
+    transition: right .5s, opacity .5s;
 }
 
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
  }
+
+// ---------------------------------------------------------- //
 
 header{
     position: relative;
