@@ -82,7 +82,7 @@ html{
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
-    transition: right .5s;
+    transition: opacity .1s;
 }
 
 // -------------------------- Section Links --- //
@@ -110,6 +110,10 @@ html{
 #box-eng, #box-de{
     height: 40px;
     position: relative;
+}
+
+#btn-eng, #btn-de{
+    transition: opacity .5s;
 }
 
 .language-tick{
