@@ -53,14 +53,12 @@ html{
     top: 0px;
     right: -150px;
     transition: right .5s, opacity .6s;
-    &:hover{
-        right: 0;
-    }
+
     &::before{
-        content: "\2634";
+        content: "";
         text-align: start;
         align-self: center;
-        font-size: 2rem;
+        // font-size: 2rem;
         padding: 0 0 5px 10px;
         background-color: #6f2da8;
         color: #fff;
@@ -75,6 +73,16 @@ html{
         -moz-box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
         box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
     }
+}
+
+#toggle-icon{
+    position: absolute;
+    top: -2px;
+    right: 155px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: right .5s;
 }
 
 // -------------------------- Section Links --- //
