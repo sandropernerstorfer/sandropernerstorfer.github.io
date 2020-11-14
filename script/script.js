@@ -111,3 +111,23 @@ function insertContent(i){
 }
 
 // ****************************************************************************** //
+
+// ---------------- Navigation Open/Close ------- //
+
+const toggler = document.getElementById('toggle-icon');
+var navOpen = false;
+
+toggler.addEventListener('click',function(){
+
+    if (navOpen === false){
+        navbar.style.right = "0px";
+        // toggler.style.right = "5px";
+        navOpen = true;
+    }
+    else if (navOpen === true){
+        navbar.style.right = "-150px";
+        // toggler.style.right = "155px";
+        navOpen = false;
+    }
+
+});
