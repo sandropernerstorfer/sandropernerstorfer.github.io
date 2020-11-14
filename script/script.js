@@ -73,14 +73,18 @@ function showContent(){
 }
 
 // ****************************************************************************** //
+
+// *** GET LANGUAGE BUTTONS *** //
+
+const eng_button = document.getElementById('btn-eng');
+const de_button = document.getElementById('btn-de');
+
+eng_button.addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);}, false);
+de_button.addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);}, false);
+
 // *** LANGUAGE HANDLING / INSERTION *** //
 
 languageHandling();
-
-// *** GET BUTTONS INSIDE LANGUAGE MODAL *** //
-
-document.getElementById('btn-eng').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'english');languageHandling(english);}, false);
-document.getElementById('btn-de').addEventListener('click', function(){localStorage.setItem('sandroLanguage', 'german');languageHandling(german);}, false);
 
 // *** FUNCTION FOR LANGUAGE INSERTION *** //
 
@@ -93,11 +97,19 @@ if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
     $(ticks[0]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
     $(ticks[1]).css({'right' : '0px', 'opacity' : '0'});
+    eng_button.style.opacity = "1";
+    eng_button.style.filter = "grayscale(0%)";
+    de_button.style.opacity = ".2";
+    de_button.style.filter = "grayscale(100%)";
     insertContent(english);
 }
 else if(localStore === 'german' || x === german){
     $(ticks[0]).css({'right' : '0px', 'opacity' : '0'});
     $(ticks[1]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
+    eng_button.style.opacity = ".2";
+    eng_button.style.filter = "grayscale(100%)";
+    de_button.style.opacity = "1";
+    de_button.style.filter = "grayscale(0%)";
     insertContent(german);
 }
 
@@ -120,13 +132,15 @@ var navOpen = false;
 toggler.addEventListener('click',function(){
 
     if (navOpen === false){
+        toggler.style.opacity = "0";
         navbar.style.right = "0px";
-        // toggler.style.right = "5px";
+        setTimeout('toggler.innerHTML = "&#10005;"; toggler.style.opacity = "1";',200);
         navOpen = true;
     }
     else if (navOpen === true){
+        toggler.style.opacity = "0";
         navbar.style.right = "-150px";
-        // toggler.style.right = "155px";
+        setTimeout('toggler.innerHTML = "&#9780;"; toggler.style.opacity = "1";',200);
         navOpen = false;
     }
 
