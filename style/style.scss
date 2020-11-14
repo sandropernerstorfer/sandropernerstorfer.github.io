@@ -140,34 +140,40 @@ header{
     text-align: center;
     background-color: #fff;
     font-family: "Rubik";
-    background-image: url(../img/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    // background-image: url(../img/header-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+    // background-attachment: fixed;
 }
 
-#intro-box{
-    padding: 0px 20px;
-}
-
-#intro-name{
+#intro-welcome{
+    text-align: start;
     font-weight: 200;
     font-size: 4.5rem;
-    color: #fff;
+    color: #343A40;
     opacity: 0;
     margin-bottom: 80px;
-    transition: opacity 3s, margin-bottom 1.5s;
+    transition: opacity 1s, margin-bottom 1s;
     cursor: default;
 }
 
 #intro-desc{
+    text-align: start;
     font-weight: 300;
-    color: #fff;
+    color: #343A40;
     font-size: 2rem;
     cursor: default;
+}
+
+#full-name{
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity .5s;
+}
+
+#full-title{
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 #word-frontend{
@@ -186,7 +192,7 @@ header{
     cursor: default;
     text-align: center;
     vertical-align: middle;
-    color: #fff;
+    color: #343A40;
 }
 
 .fa-play-circle{
@@ -199,13 +205,13 @@ header{
 }
 
 @media (max-width: 710px){
-    #intro-name{
+    #intro-welcome{
         font-size: 3.3rem;
     }
 }
 
 @media (max-width: 650px){
-    #intro-name{
+    #intro-welcome{
         font-size: 2.8rem;
     }
     
@@ -218,7 +224,7 @@ header{
 }
 
 @media (max-width: 550px){
-    #intro-name{
+    #intro-welcome{
         font-size: 2.2rem;
     }
     
@@ -238,7 +244,7 @@ header{
 }
 
 @media (max-width: 455px){
-    #intro-name{
+    #intro-welcome{
         font-size: 2rem;
     }
     #intro-desc{
@@ -250,7 +256,7 @@ header{
 }
 
 @media (max-width: 360px){
-    #intro-name{
+    #intro-welcome{
         font-size: 1.5rem;
     }
     #intro-desc{
@@ -273,7 +279,7 @@ header{
 }
 
 @media (max-width: 300px){
-    #intro-name{
+    #intro-welcome{
         font-size: 1.2rem;
     }
     #intro-desc{
