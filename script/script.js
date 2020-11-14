@@ -29,19 +29,44 @@ if(isMobile)
 // ****************************************** //
 // *** INTRO FADE IN ANIMATION *** //
 
-let introName = document.getElementById('intro-name');
+let introWelcome = document.getElementById('intro-welcome');
 let introDesc = document.getElementById('intro-desc');
-let wordFront = document.getElementById('word-frontend');
-let wordDev = document.getElementById('word-development');
+const full_name = document.getElementById('full-name');
+const full_title = document.getElementById('full-title');
+const name_display = document.getElementById('name-display');
+const job_display = document.getElementById('job-display');
 let introBtn = document.getElementById('intro-button');
 let goIcon = document.getElementById('goIcon');
 let shape1 = document.getElementById('landing-shape-1');
 let shape2 = document.getElementById('landing-shape-2');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
-    setTimeout('introName.style.opacity = "1"; introName.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
-    setTimeout('introDesc.style.opacity = "1"; wordFront.style.opacity = "1"; wordDev.style.opacity = "1";',1000);
-    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer";',2500);
+    setTimeout('introWelcome.style.opacity = "1"; introWelcome.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
+    setTimeout('full_name.style.opacity = "1";',850);
+    setTimeout(function nameInsert(){
+        
+        var name = "Sandro Pernerstorfer".split('');
+    
+        for (let a = 0; a < name.length; a++) {
+        
+            setTimeout(function timer(){
+                name_display.textContent += name[a];
+            }, a * 60);
+        }
+    },1200);
+    setTimeout('full_title.style.opacity = "1";',2600);
+    setTimeout(function nameInsert(){
+        
+        var title = "Frontend Development".split('');
+    
+        for (let a = 0; a < title.length; a++) {
+        
+            setTimeout(function timer(){
+                job_display.textContent += title[a];
+            }, a * 60);
+        }
+    },3000);
+    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer";',4700);
 }
 
 introFade();
