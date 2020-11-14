@@ -134,13 +134,13 @@ toggler.addEventListener('click',function(){
     if (navOpen === false){
         toggler.style.opacity = "0";
         navbar.style.right = "0px";
-        setTimeout('toggler.innerHTML = "&#10005;"; toggler.style.opacity = "1";',200);
+        setTimeout('toggler.innerHTML = "&#10005;"; toggler.style.opacity = "1";',220);
         navOpen = true;
     }
     else if (navOpen === true){
         toggler.style.opacity = "0";
         navbar.style.right = "-150px";
-        setTimeout('toggler.innerHTML = "&#9780;"; toggler.style.opacity = "1";',200);
+        setTimeout('toggler.innerHTML = "&#9780;"; toggler.style.opacity = "1";',220);
         navOpen = false;
     }
 
