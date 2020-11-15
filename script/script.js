@@ -64,7 +64,7 @@ function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
             }, a * 60);
         }
     },3000);
-    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer";',4700);
+    setTimeout('introBtn.style.opacity = ".9"; goIcon.style.cursor = "pointer";',4200);
 }
 
 introFade();
