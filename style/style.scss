@@ -303,6 +303,20 @@ header{
     font-size: 1rem;
     letter-spacing: 1px;
     cursor: default;
+    line-height: 1.9rem;
+}
+
+#text-icons{
+    display: flex;
+    justify-content: center;
+}
+
+#text-icons div{
+    border-radius: 50%;
+    height: 120px;
+    width: 110px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .about-image{
