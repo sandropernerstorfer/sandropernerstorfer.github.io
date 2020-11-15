@@ -118,7 +118,7 @@ const ticks = document.getElementsByClassName('language-tick');
 
 if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
-    $(ticks[0]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
+    $(ticks[0]).css({'color' : 'green', 'right' : '20px', 'opacity' : '0.7'});
     $(ticks[1]).css({'right' : '0px', 'opacity' : '0'});
     eng_button.style.opacity = "1";
     eng_button.style.filter = "grayscale(0%)";
@@ -128,7 +128,7 @@ if(localStore === null || localStore === 'english' || x === english){
 }
 else if(localStore === 'german' || x === german){
     $(ticks[0]).css({'right' : '0px', 'opacity' : '0'});
-    $(ticks[1]).css({'color' : '#6f2da8', 'right' : '20px', 'opacity' : '0.7'});
+    $(ticks[1]).css({'color' : 'green', 'right' : '20px', 'opacity' : '0.7'});
     eng_button.style.opacity = ".2";
     eng_button.style.filter = "grayscale(100%)";
     de_button.style.opacity = "1";
