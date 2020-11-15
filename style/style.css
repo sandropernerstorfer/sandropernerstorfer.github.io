@@ -98,7 +98,6 @@
 
 body {
   background-color: #fff;
-  padding: 0 20px;
   overflow-x: hidden; }
 
 html {
@@ -193,7 +192,12 @@ header {
   align-items: center;
   text-align: center;
   background-color: #fff;
-  font-family: "Rubik"; }
+  font-family: "Rubik";
+  background-image: url(../img/base/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll; }
 
 #intro-welcome {
   text-align: center;
@@ -288,46 +292,6 @@ header {
 
   #intro-desc {
     font-size: .8rem; } }
-.custom-shape-divider-bottom-1604414453 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg); }
-
-#landing-shape-1 {
-  opacity: 1;
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 126px; }
-
-.custom-shape-divider-bottom-1604414453 .shape-fill {
-  fill: #fff; }
-
-.custom-shape-divider-top-1604414536 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0; }
-
-#landing-shape-2 {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 0px;
-  transition: height 2s; }
-
-.custom-shape-divider-top-1604414536 .shape-fill {
-  fill: #fff; }
-
-@media (max-height: 700px) {
-  #landing-shape {
-    display: none; } }
 #main-box {
   display: none; }
 
