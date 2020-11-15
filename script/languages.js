@@ -4,10 +4,10 @@ const english =
         nav2 : "Projects",
         nav3 : "Contact",
         about : "About",
-        greet : "I am Sandro Pernerstorfer,",
-        ab1 : "a motivated Web-Developer from Vienna with a desire to learn.",
-        ab2 : "Combining creativity and logic to develop great products has always inspired me. So i am constantly learning and improving myself to help and make the Web a beautiful place.",
-        ab3 : "This page was created to offer a quick overview of my work, and myself.",
+        greet : "Hi i'm Sandro ! ",
+        ab1 : "A motivated Web-Developer from Vienna with a desire to learn. ",
+        ab2 : "I love Creativity, Structure, Organizing, and to combine all of that with Logic. ",
+        ab3 : "Focused on Frontend and always improving on Full-Stack. ",
         skill1 : "I mainly work with",
         skill2 : "and have experience with"
     };
@@ -18,10 +18,10 @@ const german =
         nav2 : "Projekte",
         nav3 : "Kontakt",
         about : "Über Mich",
-        greet : "Ich bin Sandro Pernerstorfer,",
-        ab1 : "ein motivierter und lerneifriger Web-Entwickler aus Wien.",
-        ab2 : "Kreativität und Logik zu kombinieren um großartige Produkte zu erschaffen hat mich schon immer inspiriert und dazu bewegt, stets neues zu lernen.",
-        ab3 : "Diese Seite wurde erstellt um einen kleinen Überblick von mir und ein paar meiner Projekte zu schaffen.",
+        greet : "Hi ich bin Sandro ! ",
+        ab1 : "Ein motivierter und lerneifriger Web-Entwickler aus Wien. ",
+        ab2 : "Ich liebe Kreativität, Struktur, Ordnung, und all das mit Logik zu verbinden. ",
+        ab3 : "Fokusiert auf Frontend, mit Full-Stack Erfahrung. ",
         skill1 : "Ich arbeite hauptsächlich mit",
         skill2 : "und habe Erfahrung mit"
     };
