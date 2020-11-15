@@ -144,6 +144,9 @@ header{
     background-size: cover;
     background-position: center center;
     background-attachment: scroll;
+    -webkit-box-shadow: inset -16px -107px 47px -82px rgba(117,117,117,0.57);
+    -moz-box-shadow: inset -16px -107px 47px -82px rgba(117,117,117,0.57);
+    box-shadow: inset -16px -107px 47px -82px rgba(117,117,117,0.57);
 }
 
 #intro-welcome{
@@ -165,18 +168,13 @@ header{
     cursor: default;
 }
 
-#full-name{
+#full-name, #full-title{
     opacity: 0;
     transition: opacity .5s;
 }
 
 #name-display{
     letter-spacing: 1px;
-}
-
-#full-title{
-    opacity: 0;
-    transition: opacity .5s;
 }
 
 #full-name i, #full-title i{
@@ -195,7 +193,7 @@ header{
 
 #intro-button{
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 1s;
     cursor: default;
     text-align: center;
     vertical-align: middle;
@@ -219,9 +217,6 @@ header{
     #intro-desc{
         font-size: 1.6rem;
     }
-    .fa-play-circle{
-        font-size: 1.8rem;
-    }
 }
 
 @media (max-width: 385px){
@@ -240,6 +235,9 @@ header{
     #intro-desc{
         font-size: 1.3rem;
     }
+    .fa-play-circle{
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 320px){
@@ -248,9 +246,6 @@ header{
     }
     #intro-desc{
         font-size: 1.1rem;
-    }
-    .fa-play-circle{
-        font-size: 1.4rem;
     }
 }
 
@@ -274,6 +269,7 @@ header{
 
 #main-box{
     display: none;
+    border-top: 1px solid #ccc;
 }
 
 // ---------------------------------------------------------------- //

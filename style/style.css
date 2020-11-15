@@ -197,7 +197,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: scroll; }
+  background-attachment: scroll;
+  -webkit-box-shadow: inset -16px -107px 47px -82px rgba(117, 117, 117, 0.57);
+  -moz-box-shadow: inset -16px -107px 47px -82px rgba(117, 117, 117, 0.57);
+  box-shadow: inset -16px -107px 47px -82px rgba(117, 117, 117, 0.57); }
 
 #intro-welcome {
   text-align: center;
@@ -216,16 +219,12 @@ header {
   font-size: 2rem;
   cursor: default; }
 
-#full-name {
+#full-name, #full-title {
   opacity: 0;
   transition: opacity .5s; }
 
 #name-display {
   letter-spacing: 1px; }
-
-#full-title {
-  opacity: 0;
-  transition: opacity .5s; }
 
 #full-name i, #full-title i {
   color: #6f2da8; }
@@ -240,7 +239,7 @@ header {
 
 #intro-button {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 1s;
   cursor: default;
   text-align: center;
   vertical-align: middle;
@@ -258,10 +257,7 @@ header {
     font-size: 3.7rem; }
 
   #intro-desc {
-    font-size: 1.6rem; }
-
-  .fa-play-circle {
-    font-size: 1.8rem; } }
+    font-size: 1.6rem; } }
 @media (max-width: 385px) {
   #intro-welcome {
     font-size: 3.4rem; }
@@ -273,16 +269,16 @@ header {
     font-size: 3rem; }
 
   #intro-desc {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  .fa-play-circle {
+    font-size: 1.8rem; } }
 @media (max-width: 320px) {
   #intro-welcome {
     font-size: 2.6rem; }
 
   #intro-desc {
-    font-size: 1.1rem; }
-
-  .fa-play-circle {
-    font-size: 1.4rem; } }
+    font-size: 1.1rem; } }
 @media (max-width: 300px) {
   #intro-welcome {
     font-size: 2.2rem; }
@@ -296,7 +292,8 @@ header {
   #intro-desc {
     font-size: .8rem; } }
 #main-box {
-  display: none; }
+  display: none;
+  border-top: 1px solid #ccc; }
 
 #about-box {
   background-color: #fff;
