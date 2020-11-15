@@ -37,11 +37,9 @@ const name_display = document.getElementById('name-display');
 const job_display = document.getElementById('job-display');
 let introBtn = document.getElementById('intro-button');
 let goIcon = document.getElementById('goIcon');
-let shape1 = document.getElementById('landing-shape-1');
-let shape2 = document.getElementById('landing-shape-2');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
-    setTimeout('introWelcome.style.opacity = "1"; introWelcome.style.marginBottom = "0"; shape2.style.height = "126px"; shape1.style.opacity = "1";',1);
+    setTimeout('introWelcome.style.opacity = "1"; introWelcome.style.marginBottom = "0";',1);
     setTimeout('full_name.style.opacity = "1";',850);
     setTimeout(function nameInsert(){
         
