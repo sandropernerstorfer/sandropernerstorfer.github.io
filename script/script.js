@@ -39,7 +39,7 @@ let introBtn = document.getElementById('intro-button');
 let goIcon = document.getElementById('goIcon');
 
 function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
-    setTimeout('introWelcome.style.opacity = "1"; introWelcome.style.marginBottom = "0";',1);
+    setTimeout('introWelcome.style.opacity = ".9"; introWelcome.style.marginBottom = "0";',1);
     setTimeout('full_name.style.opacity = "1";',850);
     setTimeout(function nameInsert(){
         
