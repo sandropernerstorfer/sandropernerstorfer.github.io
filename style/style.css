@@ -343,15 +343,15 @@ header {
 
 .list-group li:nth-child(1) {
   background: rgba(255, 255, 255, 0.85);
-  color: #343A40;
-  font-size: 1.2rem; }
+  color: #343A40; }
 
 .skill-list img {
   width: 1.2rem;
   height: 1.2rem; }
 
 .skill-list span {
-  margin-left: 50px; }
+  margin-left: 50px;
+  font-size: .9rem; }
 
 .fa-hammer {
   color: yellow;
