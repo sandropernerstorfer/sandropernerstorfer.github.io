@@ -7,7 +7,9 @@ const english =
         ab1 : "A motivated Web-Developer from Vienna with a desire to learn.",
         ab2 : "I love Creativity, Structure, Organizing, and to combine all of that with Logic.",
         ab3 : "Focused on Frontend and always improving on Full-Stack.",
-        prj : "Project Portfolio"
+        prj : "Project Portfolio",
+        info1 : " Click ",
+        info2 : " for Details "
     };
 
 const german = 
@@ -19,5 +21,7 @@ const german =
         ab1 : "Ein motivierter und lerneifriger Web-Entwickler aus Wien.",
         ab2 : "Ich liebe Kreativität, Struktur, Ordnung, und all das mit Logik zu verbinden.",
         ab3 : "Fokusiert auf Frontend, mit Full-Stack Erfahrung.",
-        prj : "Projekt Portfolio"
+        prj : "Projekt Portfolio",
+        info1 : " Klicke auf ",
+        info2 : " für Details "
     };
