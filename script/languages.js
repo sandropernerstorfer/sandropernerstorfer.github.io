@@ -6,7 +6,8 @@ const english =
         about : "Hi i'm Sandro !",
         ab1 : "A motivated Web-Developer from Vienna with a desire to learn.",
         ab2 : "I love Creativity, Structure, Organizing, and to combine all of that with Logic.",
-        ab3 : "Focused on Frontend and always improving on Full-Stack."
+        ab3 : "Focused on Frontend and always improving on Full-Stack.",
+        prj : "Project Portfolio"
     };
 
 const german = 
@@ -17,5 +18,6 @@ const german =
         about : "Hi ich bin Sandro !",
         ab1 : "Ein motivierter und lerneifriger Web-Entwickler aus Wien.",
         ab2 : "Ich liebe Kreativität, Struktur, Ordnung, und all das mit Logik zu verbinden.",
-        ab3 : "Fokusiert auf Frontend, mit Full-Stack Erfahrung."
+        ab3 : "Fokusiert auf Frontend, mit Full-Stack Erfahrung.",
+        prj : "Projekt Portfolio"
     };

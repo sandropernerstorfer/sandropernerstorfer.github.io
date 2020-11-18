@@ -59,10 +59,8 @@ html{
         content: "";
         text-align: start;
         align-self: center;
-        // font-size: 2rem;
         padding: 0 0 5px 10px;
-        background-color: #6f2da8;
-        color: #fff;
+        background-color: #864EB6;
         display: block;
         height: 50px;
         width: 200px;
@@ -70,9 +68,9 @@ html{
         position: relative;
         right: 45px;
         top: -10px;
-        -webkit-box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
-        -moz-box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
-        box-shadow: -11px 7px 31px -1px rgba(204,204,204,1);
+        -webkit-box-shadow: -8px 2px 25px -6px rgba(0,0,0,0.78);
+        -moz-box-shadow: -8px 2px 25px -6px rgba(0,0,0,0.78);
+        box-shadow: -8px 2px 25px -6px rgba(0,0,0,0.78);
     }
 }
 
@@ -362,6 +360,76 @@ header{
 .skill-list span{
     margin-left: 50px;
     font-size: .9rem;
+}
+
+// -------------------------- Project Section --- //
+
+#projects-section{
+    font-family: "Nunito";
+    color: #343A40;
+}
+
+#projects-section h2{
+    margin: 90px 0;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.project-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.project-card{
+    margin: 25px;
+    width: 400px;
+    height: 320px;
+    border-radius: 5px;
+    -webkit-box-shadow: -9px 9px 28px -4px rgba(56,56,56,0.3);
+    -moz-box-shadow: -9px 9px 28px -4px rgba(56,56,56,0.3);
+    box-shadow: -9px 9px 28px -4px rgba(56,56,56,0.3);
+}
+
+.project-flex img{
+    width: 100%;
+    height: 270px;
+}
+
+.project-name{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #864EB6;
+    color: #fff;
+    font-weight: 200;
+    padding-left: 35px;
+    font-size: 1.1rem;
+}
+
+.project-name i{
+    position: absolute;    
+}
+.project-name i:nth-child(1){
+    font-size: 10px;
+    left: 10px;
+    top: 20px;
+    margin: auto 0;
+}
+.project-name i:nth-child(2){
+    font-size: 25px;
+    right: 20px; 
+    top: 12px;
+    margin: auto 0;
 }
 
 // *** W.I.P. *** //
