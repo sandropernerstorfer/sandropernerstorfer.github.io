@@ -98,7 +98,8 @@
 
 body {
   background-color: #fff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 html {
   overflow-y: scroll;
