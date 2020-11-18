@@ -103,7 +103,8 @@ body {
 html {
   overflow-y: scroll;
   overscroll-behavior-y: none;
-  overscroll-behavior-x: none; }
+  overscroll-behavior-x: none;
+  scroll-behavior: smooth; }
 
 .color-tag {
   color: #6f2da8;
