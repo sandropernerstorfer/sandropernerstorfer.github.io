@@ -296,6 +296,7 @@ header{
     text-align: center;
     align-items: center;
     color: #fff;
+    cursor: default;
 }
 
 #about-me div{
@@ -367,6 +368,7 @@ header{
 #projects-section{
     font-family: "Nunito";
     color: #343A40;
+    cursor: default;
 }
 
 #projects-title{
@@ -440,6 +442,11 @@ header{
     right: 20px; 
     top: 12px;
     margin: auto 0;
+    cursor: pointer;
+    transition: transform .6s;
+    &:hover{
+        transform: rotate(-20deg);
+    }
 }
 
 @media (max-width: 350px){
