@@ -178,31 +178,22 @@
             <p class="language-switch"></p>
           </div>
           <div id="contact-form">
-            <form>
+            <form target="hiddenFrame" id="gForm" method="POST" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbyc5pxg1Mz0EAF3aR_N_bC0pc7szGH4K36IU3sh/exec">
               <div class="form-group mb-4">
-                <input type="email" class="form-control mb-3" placeholder="Name">
+                <input id="name" type="name" name="name" class="form-control mb-3" placeholder="Name">
               </div>
               <div class="form-group mb-4">
-                <input type="name" class="form-control mb-3" placeholder="Email">
+                <input id="email" type="email" name="email" class="form-control mb-3" placeholder="Email">
               </div>
               <div class="form-group">
-                <textarea id="message-textarea" class="form-control" rows="5"></textarea>
+                <textarea id="message" name="message" class="form-control" rows="5"></textarea>
               </div>
-              <button id="submit-button" type="submit" class="btn btn-light">Send <i class="far fa-paper-plane"></i></button>
+              <button id="submit-button" class="btn btn-light"><span class="language-switch"></span></button>
             </form>
           </div>
         </div>
       </section>
-      <!-- WORK IN PROGRESS -->
-      <div class="container">
-        <div class="row mt-5 mb-5">
-          <div class="col text-center">
-            <i class="fas fa-hammer"></i>
-            <h3 class="mt-2 wip-line">Work in Progress...</h3>
-          </div>
-        </div>
-      </div>
-      <!-- WORK IN PROGRESS -->
+      <iframe name="hiddenFrame" style="position:absolute; top:-1px; left:-1px; width:1px; height:1px;"></iframe>
     </main>
     
     <script src="script/languages.js"></script>

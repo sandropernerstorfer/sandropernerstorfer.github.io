@@ -115,7 +115,7 @@ function languageHandling(x){
 let localStore = localStorage.getItem('sandroLanguage');
 
 const ticks = document.getElementsByClassName('language-tick');
-const textarea = document.getElementById('message-textarea');
+const textarea = document.getElementById('message');
 
 if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
@@ -180,3 +180,16 @@ buttons.forEach((btn) => { btn.addEventListener("click", (event) => { showInfo(b
 function showInfo(x){
     alert(x);
 }
+
+// ------------------- Contact Form ------------- //
+
+const submitButton = document.getElementById('submit-button');
+const contactForm = document.getElementById('gForm');
+
+submitButton.addEventListener('click', function(){
+    submitButton.innerHTML = '<i class="far fa-thumbs-up"></i>';
+    submitButton.style.opacity = ".4";
+    contactForm.reset();
+    setTimeout('submitButton.disabled = !0;',2000);
+}
+);

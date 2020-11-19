@@ -11,7 +11,8 @@ const english =
         info1 : " Click ",
         info2 : " for Details ",
         contact : "Contact",
-        contact2 : "Feel free to send me a message !"
+        contact2 : "Feel free to send me a message !",
+        submit : "Send"
     };
 
 const german = 
@@ -27,5 +28,6 @@ const german =
         info1 : " Klicke auf ",
         info2 : " für Details ",
         contact : "Kontakt",
-        contact2 : "Ich freue mich über jede Nachricht !"
+        contact2 : "Ich freue mich über jede Nachricht !",
+        submit : "Senden"
     };
