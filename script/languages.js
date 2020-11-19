@@ -9,7 +9,9 @@ const english =
         ab3 : "Focused on Frontend and always improving on Full-Stack.",
         prj : "Project Portfolio",
         info1 : " Click ",
-        info2 : " for Details "
+        info2 : " for Details ",
+        contact : "Contact",
+        contact2 : "Feel free to send me a message !"
     };
 
 const german = 
@@ -23,5 +25,7 @@ const german =
         ab3 : "Fokusiert auf Frontend, mit Full-Stack Erfahrung.",
         prj : "Projekt Portfolio",
         info1 : " Klicke auf ",
-        info2 : " für Details "
+        info2 : " für Details ",
+        contact : "Kontakt",
+        contact2 : "Ich freue mich über jede Nachricht !"
     };

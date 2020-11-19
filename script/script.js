@@ -115,6 +115,7 @@ function languageHandling(x){
 let localStore = localStorage.getItem('sandroLanguage');
 
 const ticks = document.getElementsByClassName('language-tick');
+const textarea = document.getElementById('message-textarea');
 
 if(localStore === null || localStore === 'english' || x === english){
     localStorage.setItem('sandroLanguage', 'english');
@@ -124,6 +125,7 @@ if(localStore === null || localStore === 'english' || x === english){
     eng_button.style.filter = "grayscale(0%)";
     de_button.style.opacity = ".2";
     de_button.style.filter = "grayscale(100%)";
+    textarea.placeholder = "Message";
     insertContent(english);
 }
 else if(localStore === 'german' || x === german){
@@ -133,6 +135,7 @@ else if(localStore === 'german' || x === german){
     eng_button.style.filter = "grayscale(100%)";
     de_button.style.opacity = "1";
     de_button.style.filter = "grayscale(0%)";
+    textarea.placeholder = "Nachricht";
     insertContent(german);
 }
 
