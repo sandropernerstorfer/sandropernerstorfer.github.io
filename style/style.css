@@ -441,11 +441,12 @@ header {
   line-height: 50px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #864EB6;
-  color: #fff;
+  background-color: #fff;
+  color: #343A40;
   font-weight: 200;
   padding-left: 35px;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  border-top: 1px solid #ccc; }
 
 .project-name i {
   position: absolute; }
@@ -457,14 +458,26 @@ header {
   margin: auto 0; }
 
 .project-name i:nth-child(2) {
-  font-size: 25px;
+  color: #fff;
+  font-size: 20px;
   right: 20px;
-  top: 12px;
+  top: 14px;
+  z-index: 5;
   margin: auto 0;
   cursor: pointer;
   transition: transform .6s; }
   .project-name i:nth-child(2):hover {
     transform: rotate(-20deg); }
+
+.scroll-background {
+  position: absolute;
+  right: 16px;
+  top: 7px;
+  z-index: 4;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #4995FF; }
 
 @media (max-width: 350px) {
   .project-name {
@@ -477,8 +490,14 @@ header {
     left: 7px; }
 
   .project-name i:nth-child(2) {
-    font-size: 18px;
-    top: 15px; } }
+    font-size: 15px;
+    top: 17px;
+    right: 19px; }
+
+  .scroll-background {
+    width: 25px;
+    height: 25px;
+    top: 12px; } }
 .fa-hammer {
   color: yellow;
   font-size: 500%; }
