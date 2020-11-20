@@ -372,7 +372,11 @@ header {
     flex-wrap: wrap; }
 
   .skill-list {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  #about-text p {
+    font-weight: 200;
+    font-size: .9rem; } }
 .skill-list {
   width: 100%;
   align-items: center; }
@@ -540,6 +544,9 @@ form {
     resize: none;
     outline-color: #6f2da8; }
 
+@media (max-width: 560px) {
+  #contact-text p {
+    font-size: .9rem; } }
 #submit-button {
   margin-top: 10px;
   opacity: .9;

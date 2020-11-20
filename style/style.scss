@@ -337,6 +337,10 @@ header{
     .skill-list{
         margin-bottom: 20px;
     }
+    #about-text p{
+        font-weight: 200;
+        font-size: .9rem;
+    }
 }
 
 .skill-list{
@@ -534,6 +538,12 @@ form{
     textarea{
         resize: none;
         outline-color: #6f2da8;
+    }
+}
+
+@media (max-width: 560px){
+    #contact-text p{
+        font-size: .9rem;
     }
 }
 
