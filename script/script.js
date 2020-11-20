@@ -178,7 +178,7 @@ let buttons = document.querySelectorAll('.more-info');
 buttons.forEach((btn) => { btn.addEventListener("click", (event) => { showInfo(btn.getAttribute('data')); }); });
 
 function showInfo(x){
-    alert(x);
+    alert("Working on Project-"+x);
 }
 
 // ------------------- Contact Form ------------- //
