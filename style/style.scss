@@ -8,16 +8,16 @@
     box-sizing: border-box;
 }
     *::selection{
-        background: #000;
-        color: #fff;
+        background: $pureBlack;
+        color: $pureWhite;
     }
     *::-moz-selection{
-        background: #000;
-        color: #fff;
+        background: $pureBlack;
+        color: $pureWhite;
     }
 
 body{
-    background-color: #fff;
+    background-color: $pureWhite;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -30,7 +30,7 @@ html{
 }
 
 .color-tag{
-    color: #6f2da8;
+    color: $mainViolet;
     opacity: .8;
 }
 
@@ -45,11 +45,11 @@ html{
     width: 150px;
     opacity: 0;
     padding-top: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $pureGray;
     border-right: 0;
     border-top: 0;
     border-bottom-left-radius: 20px;
-    background-color: #fff;
+    background-color: $pureWhite;
     z-index: 5;
     position: fixed;
     top: 0px;
@@ -61,7 +61,7 @@ html{
         text-align: start;
         align-self: center;
         padding: 0 0 5px 10px;
-        background-color: #864EB6;
+        background-color: $sndViolet;
         display: block;
         height: 50px;
         width: 200px;
@@ -79,7 +79,7 @@ html{
     position: absolute;
     top: -2px;
     right: 155px;
-    color: #fff;
+    color: $pureWhite;
     font-size: 2rem;
     cursor: pointer;
     transition: opacity .1s;
@@ -91,7 +91,7 @@ html{
     cursor: pointer;
     transition: color .2s;
     &:hover{
-        color: #6f2da8;
+        color: $mainViolet;
     }
 }
 
@@ -115,7 +115,7 @@ html{
 
 .language-tick{
     position: absolute;
-    color: #fff;
+    color: $pureWhite;
     opacity: 0;
     top: 7px;
     right: 0px;
@@ -138,7 +138,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color: $pureWhite;
     font-family: "Rubik";
     background-image: url(../img/base/header-bg.jpg);
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ header{
     text-align: center;
     font-weight: 200;
     font-size: 4.5rem;
-    color: #343A40;
+    color: $mainText;
     opacity: 0;
     margin-bottom: 80px;
     transition: opacity 1s, margin-bottom 1s;
@@ -164,7 +164,7 @@ header{
 #intro-desc{
     text-align: start;
     font-weight: 300;
-    color: #343A40;
+    color: $mainText;
     font-size: 2rem;
     cursor: default;
     opacity: .9;
@@ -183,7 +183,7 @@ header{
 }
 
 #full-name i, #full-title i{
-    color: #6f2da8;
+    color: $mainViolet;
 }
 
 #word-frontend{
@@ -202,7 +202,7 @@ header{
     cursor: default;
     text-align: center;
     vertical-align: middle;
-    color: #343A40;
+    color: $mainText;
 }
 
 .fa-play-circle{
@@ -210,7 +210,7 @@ header{
     font-weight: 300;
     transition: all .3s;
     &:hover{
-        color: #6f2da8;
+        color: $mainViolet;
     }
 }
 
@@ -284,7 +284,7 @@ header{
 #about-section{
     width: 100%;
     height: 100%;
-    background-color: #6f2da8;
+    background-color: $mainViolet;
     font-family: 'Nunito';
 }
 
@@ -296,7 +296,7 @@ header{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    color: #fff;
+    color: $pureWhite;
     cursor: default;
 }
 
@@ -320,7 +320,7 @@ header{
 #about-skills{
     display: flex;
     justify-content: space-around;
-    color: #fff;
+    color: $pureWhite;
     font-weight: 200;
 }
 
@@ -355,7 +355,7 @@ header{
 
 .list-group li:nth-child(1){
     background: rgba(255, 255, 255, 0.85);
-    color: #343A40;
+    color: $mainText;
 }
 
 .skill-list img{
@@ -372,7 +372,7 @@ header{
 
 #projects-section{
     font-family: "Nunito";
-    color: #343A40;
+    color: $mainText;
     cursor: default;
     margin-bottom: 150px;
 }
@@ -426,12 +426,12 @@ header{
     line-height: 50px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #fff;
-    color: #343A40;
+    background-color: $pureWhite;
+    color: $mainText;
     font-weight: 200;
     padding-left: 35px;
     font-size: 1.1rem;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $pureGray;
 }
 
 .project-name i{
@@ -445,7 +445,7 @@ header{
     color: greenyellow;
 }
 .project-name i:nth-child(2){
-    color: #fff;
+    color: $pureWhite;
     font-size: 20px;
     right: 20px; 
     top: 14px;
@@ -465,7 +465,7 @@ header{
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: #4995FF;
+    background-color: $mainBlue;
 }
 
 @media (max-width: 350px){
@@ -495,7 +495,7 @@ header{
 #contact-section{
     width: 100%;
     height: 100%;
-    background-color: #6f2da8;
+    background-color: $mainViolet;
     font-family: 'Nunito';
 }
 
@@ -504,7 +504,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: $pureWhite;
     div{
         width: 100%;
     }
@@ -537,7 +537,7 @@ form{
     max-width: 420px;
     textarea{
         resize: none;
-        outline-color: #6f2da8;
+        outline-color: $mainViolet;
     }
 }
 
@@ -552,7 +552,7 @@ form{
     opacity: .9;
     width: 130px;
     background: rgba(255, 255, 255, 0.15);
-    color: #fff;
+    color: $pureWhite;
 }
 
 // -------------------------
@@ -560,8 +560,8 @@ form{
 footer{
     width: 100%;
     height: 220px;
-    background-color: #864EB6;
-    color: #343A40;
+    background-color: $sndViolet;
+    color: $mainText;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,7 +578,7 @@ footer{
     cursor: default;
     opacity: .9;
     a{
-        color: #fff;
+        color: $pureWhite;
     }
     i{
         cursor: pointer;
@@ -599,13 +599,13 @@ footer{
     width: 40px;
     height: 40px;
     color: crimson;
-    background-color: #fff;
+    background-color: $pureWhite;
     text-align: center;
     border-radius: 50%;
     transition: background-color .5s, color .5s;
     &:hover{
         background-color: crimson;
-        color: #fff;
+        color: $pureWhite;
     }
     i{
         position: absolute;
