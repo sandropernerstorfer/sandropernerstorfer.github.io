@@ -1,84 +1,4 @@
 @font-face {
-  font-family: "Courgette";
-  src: url(../fonts/Courgette/Courgette-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-Black.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 900; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 700; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-ExtraBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 800; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-Light.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 300; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-Medium.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 500; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita/SansitaSwashed-SemiBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 600; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 300; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf) format("truetype");
-  font-style: italic;
-  font-weight: 300; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf) format("truetype");
-  font-style: italic;
-  font-weight: normal; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 500; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-MediumItalic.ttf) format("truetype");
-  font-style: italic;
-  font-weight: 500; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 700; }
-@font-face {
-  font-family: "Ubuntu";
-  src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format("truetype");
-  font-style: italic;
-  font-weight: 700; }
-@font-face {
   font-family: "Rubik";
   src: url(../fonts/Rubik/Rubik-Regular.ttf) format("truetype");
   font-weight: normal;
@@ -556,7 +476,7 @@ form {
 
 footer {
   width: 100%;
-  height: 220px;
+  height: 130px;
   background-color: #864EB6;
   color: #343A40;
   display: flex;
