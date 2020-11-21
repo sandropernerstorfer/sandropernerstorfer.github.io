@@ -556,8 +556,9 @@ form{
 
 footer{
     width: 100%;
-    height: 130px;
-    background-color: $sndViolet;
+    height: 70px;
+    background: rgb(111,45,168);
+    background: linear-gradient(180deg, rgba(111,45,168,1) 0%, rgba(134,78,182,1) 21%, rgba(134,78,182,1) 100%);
     color: $mainText;
     display: flex;
     justify-content: center;
@@ -588,31 +589,5 @@ footer{
     }
     span{
         font-weight: 500;
-    }
-}
-
-#footer-heart{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    color: crimson;
-    background-color: $pureWhite;
-    text-align: center;
-    border-radius: 50%;
-    transition: background-color .5s, color .5s;
-    &:hover{
-        background-color: crimson;
-        color: $pureWhite;
-    }
-    i{
-        position: absolute;
-        top: 50%; right: 50%;
-        transform: translate(49%,-50%);
-        top: 50;
-        font-size: 1.4rem;
-        margin: auto;
-        line-height: 40px;
-        margin-top: 1px;
-        cursor: default;
     }
 }
