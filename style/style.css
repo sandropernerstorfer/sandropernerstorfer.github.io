@@ -65,7 +65,7 @@ html {
   border: 1px solid #ccc;
   border-right: 0;
   border-top: 0;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 30px;
   background-color: #fff;
   z-index: 5;
   position: fixed;
@@ -77,11 +77,11 @@ html {
     text-align: start;
     align-self: center;
     padding: 0 0 5px 10px;
-    background-color: #864EB6;
+    background-color: #E9E0F2;
     display: block;
     height: 50px;
     width: 200px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 20px;
     position: relative;
     right: 45px;
     top: -10px;
@@ -93,7 +93,7 @@ html {
   position: absolute;
   top: -2px;
   right: 155px;
-  color: #fff;
+  color: #343A40;
   font-size: 2rem;
   cursor: pointer;
   transition: opacity .1s; }

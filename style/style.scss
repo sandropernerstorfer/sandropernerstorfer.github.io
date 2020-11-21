@@ -45,7 +45,7 @@ html{
     border: 1px solid $pureGray;
     border-right: 0;
     border-top: 0;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 30px;
     background-color: $pureWhite;
     z-index: 5;
     position: fixed;
@@ -58,11 +58,11 @@ html{
         text-align: start;
         align-self: center;
         padding: 0 0 5px 10px;
-        background-color: $sndViolet;
+        background-color: #E9E0F2;
         display: block;
         height: 50px;
         width: 200px;
-        border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 20px;
         position: relative;
         right: 45px;
         top: -10px;
@@ -76,7 +76,7 @@ html{
     position: absolute;
     top: -2px;
     right: 155px;
-    color: $pureWhite;
+    color: $mainText;
     font-size: 2rem;
     cursor: pointer;
     transition: opacity .1s;
