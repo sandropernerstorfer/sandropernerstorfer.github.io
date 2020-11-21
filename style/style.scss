@@ -20,6 +20,7 @@ body{
     background-color: $pureWhite;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding: 0 !important;
 }
 
 html{
@@ -551,9 +552,8 @@ form{
 
 footer{
     width: 100%;
-    height: 70px;
-    background: rgb(111,45,168);
-    background: linear-gradient(180deg, rgba(111,45,168,1) 0%, rgba(134,78,182,1) 21%, rgba(134,78,182,1) 100%);
+    height: 120px;
+    background-color: $mainViolet;
     color: $mainText;
     display: flex;
     justify-content: center;
