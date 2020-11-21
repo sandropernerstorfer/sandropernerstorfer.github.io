@@ -49,7 +49,7 @@ function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
         
             setTimeout(function timer(){
                 name_display.textContent += name[a];
-            }, a * 60);
+            }, a * 50);
         }
     },1200);
     setTimeout('full_title.style.opacity = "1";',2600);
@@ -61,7 +61,7 @@ function introFade(){ // introBtn.style.opacity = "1"; //----TESTING
         
             setTimeout(function timer(){
                 job_display.textContent += title[a];
-            }, a * 60);
+            }, a * 50);
         }
     },3000);
     setTimeout('introBtn.style.opacity = ".7"; goIcon.style.cursor = "pointer";',4200);
