@@ -178,7 +178,21 @@ let buttons = document.querySelectorAll('.more-info');
 buttons.forEach((btn) => { btn.addEventListener("click", (event) => { showInfo(btn.getAttribute('data')); }); });
 
 function showInfo(x){
-    alert("Working on Project-"+x);
+    let project = eval(x);
+    let modalTargets = document.getElementsByClassName('modal-insert');
+    let githubLink = document.getElementById('project-github');
+
+    if(Object.values(project)[3] !== ""){
+        githubLink.href = Object.values(project)[3];
+    }
+    else{
+        githubLink.removeAttribute("href");
+    }
+
+    for(a = 0; a < modalTargets.length; a++){
+        modalTargets[a].textContent = Object.values(project)[a];
+    }
+
 }
 
 // ------------------- Contact Form ------------- //
