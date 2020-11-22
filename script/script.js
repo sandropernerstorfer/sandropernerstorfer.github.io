@@ -203,7 +203,8 @@ const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click', function(){
     submitButton.innerHTML = '<i class="far fa-thumbs-up"></i>';
     submitButton.style.opacity = ".4";
-    // contactForm.reset();
+    
     setTimeout('submitButton.disabled = !0;',2000);
+    setTimeout('contactForm.reset();',2500);
 }
 );
