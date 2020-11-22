@@ -201,9 +201,9 @@ const submitButton = document.getElementById('submit-button');
 
 submitButton.addEventListener('click', function(){
 
-    submitButton.innerHTML = '<i class="far fa-thumbs-up"></i>';
     submitButton.style.opacity = ".4";
-    setTimeout('submitButton.disabled = !0;',2000);
+    submitButton.disabled = !0;
+    setTimeout(`submitButton.innerHTML = 'Thanks ! <i class="far fa-thumbs-up"></i>';`,2000);
     
 }
 );
