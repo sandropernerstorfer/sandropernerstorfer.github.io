@@ -189,7 +189,7 @@ submitButton.addEventListener('click', function(){
 
     submitButton.style.opacity = ".4";
     setTimeout(`submitButton.disabled = !0;`,2000);
-    setTimeout(`submitButton.innerHTML = '<i class="far fa-thumbs-up"></i>';`,2000);
+    setTimeout(`submitButton.style.opacity = '1'; submitButton.innerHTML = '<i class="far fa-thumbs-up"></i>';`,2000);
     
 }
 );
