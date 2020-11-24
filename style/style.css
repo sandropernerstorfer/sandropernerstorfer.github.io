@@ -280,7 +280,7 @@ header {
   color: #fff;
   font-weight: 200; }
 
-@media (max-width: 1149px) {
+@media (max-width: 1122px) {
   #about-text {
     margin-bottom: 50px !important; } }
 @media (max-width: 560px) {
