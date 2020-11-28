@@ -1,49 +1,3 @@
-// --- INTRO FADE IN ANIMATION --- //
-
-const introWelcome = document.getElementById('intro-welcome');
-const introDesc = document.getElementById('intro-desc');
-const fullName = document.getElementById('full-name');
-const fullTitle = document.getElementById('full-title');
-const nameDisplay = document.getElementById('name-display');
-const jobDisplay = document.getElementById('job-display');
-const introBtn = document.getElementById('intro-button');
-const goIcon = document.getElementById('goIcon');
-
-function introFade(){
-
-    setTimeout('introWelcome.style.opacity = ".9"; introWelcome.style.marginBottom = "0";',1);
-    setTimeout('fullName.style.opacity = "1";',850);
-    setTimeout(function nameInsert(){
-        
-        let name = "Sandro Pernerstorfer".split('');
-    
-        for (let a = 0; a < name.length; a++) {
-        
-            setTimeout(function timer(){
-                nameDisplay.textContent += name[a];
-            }, a * 50);
-        }
-
-    },1200);
-    setTimeout('fullTitle.style.opacity = "1";',2600);
-    setTimeout(function nameInsert(){
-        
-        let title = "Frontend Development".split('');
-    
-        for (let a = 0; a < title.length; a++) {
-        
-            setTimeout(function timer(){
-                jobDisplay.textContent += title[a];
-            }, a * 50);
-        }
-
-    },3000);
-    setTimeout('introBtn.style.opacity = ".7"; goIcon.style.cursor = "pointer";',4200);
-}
-
-introFade();
-
-// ---------------------------------------------------------------------------- //
 // --- SMOOTH SCROLL --- //
 
 (function () {
@@ -58,20 +12,6 @@ introFade();
     }
     })();
 
-// ---------------------------------------------------------------------------- //
-// --- INTRO BUTTON --- //
-
-introBtn.addEventListener('click',showContent,false);
-const mainBox = document.getElementById('main-box');
-const navbar = document.getElementById('side-nav');
-
-function showContent(){
-    navbar.style.display = 'block';
-    mainBox.style.display = 'block';
-    navbar.style.opacity = '1';
-}
-
-// ---------------------------------------------------------------------------- //
 // --- GET LANGUAGE BUTTONS --- //
 
 const eng_button = document.getElementById('btn-eng');
@@ -123,7 +63,7 @@ languageHandling();
 
 // ---------------------------------------------------------------------------- //
 // --- NAVIGATION TOGGLE --- //
-
+const navbar = document.getElementById('side-nav');
 const toggler = document.getElementById('toggle-icon');
 let navOpen = false;
 

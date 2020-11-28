@@ -41,7 +41,6 @@ html{
     text-align: center;
     height: 333px;
     width: 150px;
-    opacity: 0;
     padding-top: 10px;
     border: 1px solid $pureGray;
     border-right: 0;
@@ -268,9 +267,9 @@ header{
     }
 }
 
-#main-box{
-    display: none;
-}
+// #main-box{
+//     display: none;
+// }
 
 // ---------------------------------------------------------------- //
 
