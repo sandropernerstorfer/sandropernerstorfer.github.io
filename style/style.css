@@ -234,10 +234,21 @@ html {
 .project-card div:nth-child(1) {
   width: 100%;
   height: 270px;
-  background-image: url("../img/projects/placeholder-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+#project-1 div:nth-child(1) {
+  background-image: url("../img/projects/ghostwriter-title-img.png"); }
+
+#project-2 div:nth-child(1) {
+  background-image: url("../img/projects/placeholder-img.png"); }
+
+#project-3 div:nth-child(1) {
+  background-image: url("../img/projects/placeholder-img.png"); }
+
+#project-4 div:nth-child(1) {
+  background-image: url("../img/projects/placeholder-img.png"); }
 
 .project-name {
   position: relative;
@@ -306,6 +317,12 @@ html {
     width: 25px;
     height: 25px;
     top: 12px; } }
+#project-github {
+  display: none; }
+
+#project-live {
+  display: none; }
+
 #contact-section {
   width: 100%;
   height: 100%;

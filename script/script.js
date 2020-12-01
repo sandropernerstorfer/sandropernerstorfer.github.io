@@ -94,12 +94,24 @@ function showInfo(x){
     let project = eval(x);
     let modalTargets = document.getElementsByClassName('modal-insert');
     let githubLink = document.getElementById('project-github');
+    let liveLink = document.getElementById('project-live');
+
+    if(Object.values(project)[4] !== ""){
+        liveLink.href = Object.values(project)[4];
+        liveLink.style.display = "inline-block";
+    }
+    else{
+        liveLink.removeAttribute("href");
+        liveLink.style.display = "none";
+    }
 
     if(Object.values(project)[3] !== ""){
         githubLink.href = Object.values(project)[3];
+        githubLink.style.display = "inline-block";
     }
     else{
         githubLink.removeAttribute("href");
+        githubLink.style.display = "none";
     }
 
     for(a = 0; a < modalTargets.length; a++){
