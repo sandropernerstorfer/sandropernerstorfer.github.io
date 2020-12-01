@@ -274,6 +274,9 @@ html{
 #project-4 div:nth-child(1){
     background-image: url("../img/projects/placeholder-img.png");
 }
+#project-1 i:nth-child(1){
+    color: greenyellow;
+}
 
 .project-name{
     position: relative;
@@ -300,7 +303,7 @@ html{
     left: 10px;
     top: 20px;
     margin: auto 0;
-    color: greenyellow;
+    color: orange;
 }
 .project-name i:nth-child(2){
     color: $pureWhite;
@@ -378,6 +381,7 @@ html{
     margin-top: 90px;
     line-height: 1.5rem;
     margin-bottom: 35px;
+    cursor: default;
     h2{
         font-weight: 700;
     }
