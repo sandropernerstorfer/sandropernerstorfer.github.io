@@ -263,10 +263,10 @@ html{
 }
 
 #project-1 div:nth-child(1){
-    background-image: url("../img/projects/ghostwriter-title-img.png");
+    background-image: url("../img/projects/usermanager-title-img.png");
 }
 #project-2 div:nth-child(1){
-    background-image: url("../img/projects/placeholder-img.png");
+    background-image: url("../img/projects/ghostwriter-title-img.png");
 }
 #project-3 div:nth-child(1){
     background-image: url("../img/projects/placeholder-img.png");
@@ -274,8 +274,15 @@ html{
 #project-4 div:nth-child(1){
     background-image: url("../img/projects/placeholder-img.png");
 }
-#project-1 i:nth-child(1){
-    color: greenyellow;
+#project-1{
+    i:nth-child(1){
+        color: greenyellow;
+    }
+}
+#project-2{
+    i:nth-child(1){
+        color: greenyellow;
+    }
 }
 
 .project-name{
