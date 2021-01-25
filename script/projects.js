@@ -10,7 +10,7 @@ const project1 =
 const project2 = 
     {
         name : "Ghostwriter",
-        techs : "HTML, SCSS, JS",
+        techs : "HTML, SCSS, JavaScript",
         desc : "Ghostwriter is a Frontend Tool that will take two user inputs : Text and Milliseconds. In the Preview Window you will then see your text displayed letter after letter for the wanted duration. Below you can copy the already generated code with one click to use wherever you want.",
         githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
         liveLink : "https://ghostwriter-js.tech/"
@@ -18,10 +18,10 @@ const project2 =
 
 const project3 = 
     {
-        name : "",
-        techs : "-",
-        desc : "Work for Project 3 in progress",
-        githubLink : "",
+        name : "Deep-Check Function",
+        techs : "JavaScript",
+        desc : "A cool and useful JavaScript function to check if two values are equal. Works on single Values, Arrays, Objects and all of those nested inside each other. Includes 2 Versions: One returns just a boolean and the other one an Array with Error-Message and Boolean.",
+        githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
         liveLink : ""
     };
 
