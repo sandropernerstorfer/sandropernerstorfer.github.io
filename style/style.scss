@@ -263,7 +263,8 @@ html{
 }
 
 #project-1 div:nth-child(1){
-    background-image: url("../img/projects/usermanager-title-img.png");
+    background-image: url("../img/projects/taskapp-title-img.png");
+    background-size: contain;
 }
 #project-2 div:nth-child(1){
     background-image: url("../img/projects/ghostwriter-title-img.png");
@@ -272,10 +273,10 @@ html{
     background-image: url("../img/projects/deepcheck-title-img.jpeg");
 }
 #project-4 div:nth-child(1){
-    background-image: url("../img/projects/placeholder-img.png");
+    background-image: url("../img/projects/usermanager-title-img.png");
 }
 
-#project-1,#project-2,#project-3{
+#project-1,#project-2,#project-3,#project-4{
     i:nth-child(1){
         color: greenyellow;
     }

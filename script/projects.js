@@ -1,10 +1,10 @@
 const project1 = 
     {
-        name : "Express User-Manager",
-        techs : "NodeJS, ExpressJS",
-        desc : "Small User-Management System with validation, search-, and sorting-functions. Built with Node and Express.",
-        githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
-        liveLink : "https://node-express-user-manager.herokuapp.com/"
+        name : "Task Management App",
+        techs : "HTML, SCSS, JavaScript, NodeJS, Express, MongoDB",
+        desc : "Full Stack Task Management Tool for Collaborative Work.\nMany Features such as: Login/SignUp, Session Management, Drag&Drop, Live Chat, Websockets and assigning Members to Tasks.\n Project Documentation, Code Documentation and general App Information can be found on GitHub.",
+        githubLink : "https://github.com/sandropernerstorfer/task-app",
+        liveLink : "https://sandi-task.herokuapp.com/"
     };
 
 const project2 = 
@@ -27,9 +27,9 @@ const project3 =
 
 const project4 = 
     {
-        name : "",
-        techs : "-",
-        desc : "Work for Project 4 in progress",
-        githubLink : "",
-        liveLink : ""
+        name : "Express User-Manager",
+        techs : "NodeJS, ExpressJS",
+        desc : "Small User-Management System with validation, search-, and sorting-functions. Built with Node and Express.",
+        githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
+        liveLink : "https://node-express-user-manager.herokuapp.com/"
     };
