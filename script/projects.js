@@ -2,7 +2,7 @@ const project1 =
     {
         name : "Task Management App",
         techs : "HTML, SCSS, JavaScript, NodeJS, Express, MongoDB",
-        desc : "Full Stack Task Management Tool for Collaborative Work.\nMany Features such as: Login/SignUp, Session Management, Drag&Drop, Live Chat, Websockets and assigning Members to Tasks.\n Project Documentation, Code Documentation and general App Information can be found on GitHub.",
+        desc : "<span style=\"color: orange;\">Heroku-App Server may need 10-20 seconds to start up.</span><br><br>Full Stack Task Management Tool for Collaborative Work.<br>Many features such as: Login/SignUp, Session Management, Drag&Drop, Live Chat, Websockets and assigning Members to Tasks. Project Documentation, Code Documentation and general App Information can be found on GitHub.",
         githubLink : "https://github.com/sandropernerstorfer/task-app",
         liveLink : "https://sandi-task.herokuapp.com/"
     };

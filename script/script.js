@@ -115,7 +115,7 @@ function showInfo(x){
     }
 
     for(a = 0; a < modalTargets.length; a++){
-        modalTargets[a].textContent = Object.values(project)[a];
+        modalTargets[a].innerHTML = Object.values(project)[a];
     }
 
 }
