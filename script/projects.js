@@ -1,6 +1,6 @@
 const project1 = 
     {
-        name : "Task Management App",
+        name : "Task App",
         techs : "HTML, SCSS, JavaScript, NodeJS, Express, MongoDB",
         desc : "<span style=\"color: orange;\">Heroku-App Server may need 10-20 seconds to start up.</span><br><br>Full Stack Task Management Tool for Collaborative Work.<br>Many features such as: Login/SignUp, Session Management, Drag&Drop, Live Chat, Websockets and assigning Members to Tasks. Project Documentation, Code Documentation and general App Information can be found on GitHub.",
         githubLink : "https://github.com/sandropernerstorfer/task-app",
@@ -20,7 +20,7 @@ const project3 =
     {
         name : "Deep-Check Function",
         techs : "JavaScript",
-        desc : "A cool and useful JavaScript function to check if two values are equal. Works on single Values, Arrays, Objects and all of those nested inside each other. Includes 2 Versions: One returns just a boolean and the other one an Array with Error-Message and Boolean.",
+        desc : "A cool and useful JavaScript function to check if two values are equal. Works on single Values, Arrays, Objects and all of those nested inside each other. Includes 2 Versions: One returns just a Boolean and the other one an Array with Error-Message and Boolean.",
         githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
         liveLink : ""
     };
