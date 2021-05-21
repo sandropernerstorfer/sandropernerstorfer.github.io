@@ -141,7 +141,6 @@ html{
     cursor: default;
     transform: translateY(-150%);
     opacity: 0;
-    animation: aboutFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) forwards 1 alternate;
 }
 
 @keyframes aboutFade {
@@ -176,7 +175,6 @@ html{
     font-weight: 200;
     opacity: 0;
     transform: translateX(150%);
-    animation: skillsFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) .9s forwards 1 alternate;
 }
 
 @keyframes skillsFade {
@@ -237,7 +235,6 @@ html{
     cursor: default;
     margin-bottom: 150px;
     opacity: 0;
-    animation: projectFade 1.5s cubic-bezier(0.1,-0.29, 0, 0.99) forwards 1 alternate;
 }
 
 @keyframes projectFade {
