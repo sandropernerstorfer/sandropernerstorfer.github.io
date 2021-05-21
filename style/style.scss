@@ -139,6 +139,16 @@ html{
     align-items: center;
     color: $pureWhite;
     cursor: default;
+    transform: translateY(-150%);
+    opacity: 0;
+    animation: aboutFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) forwards 1 alternate;
+}
+
+@keyframes aboutFade {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #about-me div{
@@ -164,6 +174,16 @@ html{
     justify-content: space-around;
     color: $pureWhite;
     font-weight: 200;
+    opacity: 0;
+    transform: translateX(150%);
+    animation: skillsFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) .9s forwards 1 alternate;
+}
+
+@keyframes skillsFade {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 1122px){
@@ -191,8 +211,7 @@ html{
 }
 
 .list-group li{
-    background-color: transparent;
-    background: rgba(255, 255, 255, 0.15);
+    background-color: #444952;
 }
 
 .list-group li:nth-child(1){
@@ -217,6 +236,14 @@ html{
     color: $mainText;
     cursor: default;
     margin-bottom: 150px;
+    opacity: 0;
+    animation: projectFade 1.5s cubic-bezier(0.1,-0.29, 0, 0.99) forwards 1 alternate;
+}
+
+@keyframes projectFade {
+    to{
+        opacity: 1;
+    }
 }
 
 #projects-title{
