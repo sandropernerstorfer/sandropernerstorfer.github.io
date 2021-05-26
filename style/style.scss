@@ -234,6 +234,13 @@ html{
     color: $mainText;
     cursor: default;
     margin-bottom: 150px;
+    opacity: 0;
+}
+
+@keyframes projectsFade {
+    to{
+        opacity: 1;
+    }
 }
 
 #projects-title{
@@ -483,4 +490,9 @@ footer{
     span{
         font-weight: 500;
     }
+}
+
+.modal{
+  font-family: "Nunito";
+  color: $mainText;
 }
