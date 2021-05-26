@@ -135,6 +135,7 @@ submitButton.addEventListener('click', function(){
 
 
 window.addEventListener('load', function () {
+    this.document.querySelector('#about-section').style.backgroundColor = '#232934';
     this.document.querySelector('#about-me').style.animation = 'aboutFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) forwards 1 alternate';
     this.document.querySelector('#about-skills').style.animation = 'skillsFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) .9s forwards 1 alternate';
     this.document.querySelector('#projects-section').style.animation = 'projectsFade 1s cubic-bezier(0.1,-0.29, 0, 0.99) .9s forwards 1 alternate';

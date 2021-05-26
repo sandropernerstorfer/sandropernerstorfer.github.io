@@ -125,8 +125,8 @@ html{
 #about-section{
     width: 100%;
     height: 100%;
-    background-color: #232934;
     font-family: 'Nunito';
+    transition: background-color .8s;
 }
 
 #about-me{
