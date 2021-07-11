@@ -13,7 +13,7 @@ const project2 =
         techs : "HTML, SCSS, JavaScript",
         desc : "Ghostwriter is a Frontend Tool that will take two user inputs : Text and Milliseconds. In the Preview Window you will then see your text displayed letter after letter for the wanted duration. Below you can copy the already generated code with one click to use wherever you want.",
         githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
-        liveLink : "https://ghostwriter-js.tech/"
+        liveLink : "https://ghostwriter-js.netlify.app/"
     };
 
 const project3 = 
